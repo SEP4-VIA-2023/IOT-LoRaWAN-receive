@@ -16,9 +16,9 @@ set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 #include_directories("${PROJECT_SOURCE_DIR}")
 include_directories(
         ${PROJECT_SOURCE_DIR}/include
-        ${PROJECT_SOURCE_DIR}/drivers
-        ${PROJECT_SOURCE_DIR}/FreeRTOS/src
-        ${PROJECT_SOURCE_DIR}/FreeRTOS/FreeRTOSTraceDriver
+        #${PROJECT_SOURCE_DIR}/drivers
+        #${PROJECT_SOURCE_DIR}/FreeRTOS/src
+        #${PROJECT_SOURCE_DIR}/FreeRTOS/FreeRTOSTraceDriver
         ${PROJECT_SOURCE_DIR}/src
 )
 
@@ -26,12 +26,12 @@ include_directories(
 file(GLOB all_SRCS
         "${PROJECT_SOURCE_DIR}/include/*.h"
         "${PROJECT_SOURCE_DIR}/src/*.c"
-        "${PROJECT_SOURCE_DIR}/drivers/*.h"
-        "${PROJECT_SOURCE_DIR}/drivers/*.c"
-        "${PROJECT_SOURCE_DIR}/FreeRTOS/src/*.h"
-        "${PROJECT_SOURCE_DIR}/FreeRTOS/src/*.c"
-        "${PROJECT_SOURCE_DIR}/FreeRTOS/FreeRTOSTraceDriver/*.h"
-        "${PROJECT_SOURCE_DIR}/FreeRTOS/FreeRTOSTraceDriver/*.c"
+        #"${PROJECT_SOURCE_DIR}/drivers/*.h"
+        #"${PROJECT_SOURCE_DIR}/drivers/*.c"
+        #"${PROJECT_SOURCE_DIR}/FreeRTOS/src/*.h"
+        #"${PROJECT_SOURCE_DIR}/FreeRTOS/src/*.c"
+        #"${PROJECT_SOURCE_DIR}/FreeRTOS/FreeRTOSTraceDriver/*.h"
+        #"${PROJECT_SOURCE_DIR}/FreeRTOS/FreeRTOSTraceDriver/*.c"
         )
 
 
