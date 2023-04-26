@@ -40,5 +40,5 @@ jobs:
       with:
           context: .
           push: true
-          tags: user/app:latest
+          tags: hugosilva04/devops_test1
 
