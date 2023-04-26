@@ -1,4 +1,41 @@
 cmake_minimum_required(VERSION 3.20.0)
-project(iot)
 
+#Setting the C compiler to GCC
+set(CMAKE_C_COMPILER "gcc")
+#project name, explicitly compiling only C code
+project(IOT C)
+#using C/C++ version 11
 set(CMAKE_CXX_STANDARD 11)
+
+# Set the output folder where your program will be created
+set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/bin)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+
+#including directories
+#include_directories("${PROJECT_SOURCE_DIR}")
+include_directories(
+        ${PROJECT_SOURCE_DIR}/include
+        ${PROJECT_SOURCE_DIR}/drivers
+        ${PROJECT_SOURCE_DIR}/FreeRTOS/src
+        ${PROJECT_SOURCE_DIR}/FreeRTOS/FreeRTOSTraceDriver
+        ${PROJECT_SOURCE_DIR}/src
+)
+
+#including directory source/header files
+file(GLOB all_SRCS
+        "${PROJECT_SOURCE_DIR}/include/*.h"
+        "${PROJECT_SOURCE_DIR}/src/*.c"
+        "${PROJECT_SOURCE_DIR}/drivers/*.h"
+        "${PROJECT_SOURCE_DIR}/drivers/*.c"
+        "${PROJECT_SOURCE_DIR}/FreeRTOS/src/*.h"
+        "${PROJECT_SOURCE_DIR}/FreeRTOS/src/*.c"
+        "${PROJECT_SOURCE_DIR}/FreeRTOS/FreeRTOSTraceDriver/*.h"
+        "${PROJECT_SOURCE_DIR}/FreeRTOS/FreeRTOSTraceDriver/*.c"
+        )
+
+
+#final executable from all source files
+add_executable(IOT ${all_SRCS})
+#linking libraries
+target_link_libraries(${PROJECT_NAME})
