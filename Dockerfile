@@ -14,4 +14,4 @@ WORKDIR /iot/src
 RUN gcc -o myapp main.c
 
 # Define the entry point
-CMD ["/app/src/myapp"]
+CMD ["/iot/src/myapp"]
