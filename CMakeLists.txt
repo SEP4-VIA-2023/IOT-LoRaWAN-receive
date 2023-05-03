@@ -20,6 +20,7 @@ message(${IOT_LIB})
 
 #using avr library
 include_directories(${PROJECT_SOURCE_DIR}/avr)
+include_directories(${PROJECT_SOURCE_DIR}/util)
 find_library(AVR_LIB libc "${PROJECT_SOURCE_DIR}/avr")
 #debugging
 message(${AVR_LIB})
