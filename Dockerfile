@@ -8,7 +8,7 @@ RUN apk update
 # install python3 for platformio
 RUN apk add --no-cache python3 py3-pip py3-virtualenv
 # install platformio
-RUN cwd
+RUN pwd
 RUN ls
 #RUN python3 get-platformio.py
 #reload so everything works
