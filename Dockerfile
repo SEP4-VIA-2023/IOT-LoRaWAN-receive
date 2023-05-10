@@ -1,4 +1,4 @@
-FROM alpine:16.10
+FROM alpine:latest
 # update apk
 RUN apk update
 # install python3 for platformio
