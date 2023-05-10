@@ -12,5 +12,5 @@ RUN pwd
 RUN ls
 #RUN python3 get-platformio.py
 #reload so everything works
-RUN udevadm control --reload-rules && udevadm trigger
+#RUN udevadm control --reload-rules && udevadm trigger
 RUN export PATH=$PATH:$HOME/.local/bin 
