@@ -1,17 +1,10 @@
-# Use Ubuntu as the base image
-FROM ubuntu:latest
-
-# Install build-essential for C development
-RUN apt-get update && apt-get install -y build-essential
-
-# Copy your C code
-COPY src /iot/src
-
-# Set the working directory
-WORKDIR /iot/src
-
-# Compile your code
-RUN gcc -o myapp main.c
-
-# Define the entry point
-CMD ["/iot/src/myapp"]
+FROM alpine:16.10
+# update apk
+RUN apk update
+# install python3 for platformio
+RUN apk add --no-cache python3 py3-pip py3-virtualenv
+# install platformio
+RUN python3 get-platformio.py
+#reload so everything works
+RUN udevadm control --reload-rules && udevadm trigger
+RUN export PATH=$PATH:$HOME/.local/bin
