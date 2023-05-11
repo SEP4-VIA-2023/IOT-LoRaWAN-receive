@@ -1,6 +1,6 @@
 #include <stddef.h>
-//#include <drivers/display_7seg.h>
 #include <avr/io.h>
+#include <display_7seg.h>
 
 #include "co2.h"
 #include "humidity.h"

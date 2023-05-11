@@ -1,9 +1,9 @@
 #include "co2.h"
-//#include <drivers/mh_z19.h>
+#include <mh_z19.h>
 
 int measureCo2() {
     // The parameter is the USART port the MH-Z19 sensor is connected to - in this case USART3
-    /*mh_z19_initialise(ser_USART3);
+    mh_z19_initialise(ser_USART3);
 
     uint16_t ppm;
     mh_z19_returnCode_t rc;
@@ -14,6 +14,5 @@ int measureCo2() {
         return -1;
     }
 
-    return ppm;*/
-    return 0;
+    return ppm;
 }
