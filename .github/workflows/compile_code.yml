@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/iot_team:latest
+      image: ${{ secrets.DOCKERHUB_USERNAME }}/iot_team:latest
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
