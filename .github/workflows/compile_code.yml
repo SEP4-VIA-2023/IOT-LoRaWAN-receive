@@ -1,0 +1,25 @@
+name: Compile and upload code
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image: ${{ secrets.DOCKERHUB_USERNAME }}/iot_team:latest
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
+    steps:
+        - name: Log in to Docker
+          run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+        - name: Checkout
+          uses: actions/checkout@v2
+        - name: Build program using PIO CLI
+          run: |
+              pio run
+ 
