@@ -11,10 +11,10 @@
 int main()
 {
     // initialises display
-    //display_7seg_initialise(NULL);
+    display_7seg_initialise(NULL);
     // we ready to show some stuff
-    //display_7seg_powerUp();
-    //display_7seg_displayHex("BA5ED");
+    display_7seg_powerUp();
+    display_7seg_displayHex("BA5ED");
   
     return 0;
 }
