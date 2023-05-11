@@ -7,5 +7,6 @@
 
 ## Installation
 1. Clone the project and open terminal in it's directory
-2. Run **pio run** to compile the code
-3. (Optional) Run **pio run --target upload** to compile and upload the project to the device
+2. Run **python3 get-platformio.py** in the project's directory to install platformio on  your device
+3. Run **pio run** to compile the code
+4. (Optional) Run **pio run --target upload** to compile and upload the project to the device
