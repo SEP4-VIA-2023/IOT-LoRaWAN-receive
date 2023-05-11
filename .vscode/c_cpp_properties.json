@@ -1,21 +1,59 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "PlatformIO",
             "includePath": [
-                "${workspaceFolder}/**",
-                "${workspaceFolder}/include"
+                "C:/Users/andrejs/Documents/School/SEP4/IOT/include",
+                "C:/Users/andrejs/Documents/School/SEP4/IOT/src",
+                "C:/Users/andrejs/Documents/School/SEP4/IOT/lib/drivers",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/variants/mega",
+                "C:/Users/andrejs/Documents/School/SEP4/IOT/lib/FreeRTOS/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                ""
             ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "C:/Users/andrejs/Documents/School/SEP4/IOT/include",
+                    "C:/Users/andrejs/Documents/School/SEP4/IOT/src",
+                    "C:/Users/andrejs/Documents/School/SEP4/IOT/lib/drivers",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/variants/mega",
+                    "C:/Users/andrejs/Documents/School/SEP4/IOT/lib/FreeRTOS/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    ""
+                ]
+            },
             "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
+                "PLATFORMIO=60107",
+                "ARDUINO_AVR_MEGA2560",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega2560__",
+                ""
             ],
-            "windowsSdkVersion": "10.0.22000.0",
-            "compilerPath": "cl.exe",
-            "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "C:/Users/andrejs/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerArgs": [
+                "-mmcu=atmega2560",
+                ""
+            ]
         }
     ],
     "version": 4

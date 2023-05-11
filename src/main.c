@@ -14,7 +14,7 @@ int main()
     display_7seg_initialise(NULL);
     // we ready to show some stuff
     display_7seg_powerUp();
-    display_7seg_displayHex("BA5ED");
+    display_7seg_displayHex("C0DE");
   
     return 0;
 }
