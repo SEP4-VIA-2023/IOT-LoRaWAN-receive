@@ -1,9 +1,9 @@
 #include "temperature.h"
-#include <drivers/hih8120.h>
+//#include <drivers/hih8120.h>
 #include <avr/delay.h>
 
 int measureTemperature() {
-    if ( HIH8120_OK == hih8120_initialise() )
+    /*if ( HIH8120_OK == hih8120_initialise() )
     {
         // Driver initialised OK
         // Always check what hih8120_initialise() returns
@@ -31,5 +31,6 @@ int measureTemperature() {
 
     //humidity = hih8120_getHumidity();
     temperature = hih8120_getTemperature();
-    return temperature;
+    return temperature;*/
+    return 0;
 }
