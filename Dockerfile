@@ -8,9 +8,12 @@ RUN apk update
 # install python3 for platformio
 RUN apk add --no-cache python3 py3-pip py3-virtualenv
 # install platformio
-RUN pwd
-RUN ls
-#RUN python3 get-platformio.py
+RUN python3 get-platformio.py
 #reload so everything works
-#RUN udevadm control --reload-rules && udevadm trigger
-RUN export PATH=$PATH:$HOME/.local/bin 
+RUN udevadm control --reload-rules && udevadm trigger
+# allowing pio to be ran from anywhere
+RUN export PATH=$PATH:$HOME/.local/bin
+RUN mkdir -p /usr/local/bin
+RUN ln -s ~/.platformio/penv/bin/platformio /usr/local/bin/platformio
+RUN ln -s ~/.platformio/penv/bin/pio /usr/local/bin/pio
+RUN ln -s ~/.platformio/penv/bin/piodebuggdb /usr/local/bin/piodebuggdb
