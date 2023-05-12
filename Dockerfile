@@ -15,4 +15,3 @@ RUN mkdir -p /usr/local/bin
 RUN ln -s ~/.platformio/penv/bin/platformio /usr/local/bin/platformio
 RUN ln -s ~/.platformio/penv/bin/pio /usr/local/bin/pio
 RUN ln -s ~/.platformio/penv/bin/piodebuggdb /usr/local/bin/piodebuggdb
-# Dockerfile change test
