@@ -17,7 +17,7 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
         with:
-          registry: https://index.docker.io/v2/
+          registry: https://index.docker.io/v2/hugosilva04/iot_team
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Checkout
