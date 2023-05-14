@@ -20,9 +20,10 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Install PlatformIO CLI
+        run: python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py)"
       - name: Build program using Platformio CLI
-        run: |
-          pio run
+        run: pio run
       - name: Build Docker image
         run: docker build -t hugosilva04/iot_team .
       - name: Push Docker image to Docker Hub
