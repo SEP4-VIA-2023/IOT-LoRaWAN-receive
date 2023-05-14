@@ -21,7 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install PlatformIO CLI
-        run: python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py)"
+        run: |
+          python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py)" \
+            && echo 'export PATH="$HOME/.local/bin:$PATH"' >> $HOME/.bashrc \
+            && source $HOME/.bashrc     
       - name: Build program using Platformio CLI
         run: pio run
       - name: Build Docker image
