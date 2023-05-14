@@ -9,7 +9,7 @@ jobs:
   compile-code:
     runs-on: ubuntu-latest
     container:
-      image: docker push hugosilva04/iot_team:tagname
+      image: docker pull hugosilva04/iot_team:tagname
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
