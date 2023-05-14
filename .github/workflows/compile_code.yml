@@ -21,7 +21,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build program using Platformio CLI
-        run: pio run
+        run: |
+          pio run
       - name: Build Docker image
         run: docker build -t hugosilva04/iot_team .
       - name: Push Docker image to Docker Hub
