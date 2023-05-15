@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "hih8120.h": "c"
+        "hih8120.h": "c",
+        "temperature.h": "c"
     }
 }

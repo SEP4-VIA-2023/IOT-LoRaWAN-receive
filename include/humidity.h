@@ -1,3 +1,3 @@
-#pragma
+#pragma once
 
 int measureHumidity();
