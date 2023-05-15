@@ -20,6 +20,8 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v2  
+      - name: Install PlatformIO Core
+        run: pip install --upgrade platformio
       - name: Build program using Platformio CLI
         run: pio run
       - name: Build Docker image
