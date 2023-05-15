@@ -24,13 +24,9 @@ jobs:
         run: pip install --upgrade platformio
       - name: Build program using Platformio CLI
         run: pio run
-      - name: Build Docker image
-        run: docker build -t hugosilva04/iot_team .
-      - name: Push Docker image to Docker Hub
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          push: true
-          tags: |
-            hugosilva04/iot_team:latest
-
+      - name: Debugging
+        run: |
+          echo "Current directory: $PWD"
+          echo "GitHub repository path: $GITHUB_WORKSPACE"
+          ls
+      
