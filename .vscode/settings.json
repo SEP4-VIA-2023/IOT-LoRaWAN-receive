@@ -1,6 +1,11 @@
 {
     "files.associations": {
         "hih8120.h": "c",
-        "temperature.h": "c"
+        "temperature.h": "c",
+        "semphr.h": "c",
+        "stdio.h": "c",
+        "task.h": "c",
+        "mh_z19.h": "c",
+        "atmega_freertos.h": "c"
     }
 }

@@ -8,10 +8,10 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "C:/Users/guiom/Documents/GitHub/WEB2_Assignment2/IOT/include",
-                "C:/Users/guiom/Documents/GitHub/WEB2_Assignment2/IOT/src",
-                "C:/Users/guiom/Documents/GitHub/WEB2_Assignment2/IOT/lib/FreeRTOS/src",
-                "C:/Users/guiom/Documents/GitHub/WEB2_Assignment2/IOT/lib/drivers",
+                "C:/Users/guiom/Documents/GitHub/IOT-Humidity/include",
+                "C:/Users/guiom/Documents/GitHub/IOT-Humidity/src",
+                "C:/Users/guiom/Documents/GitHub/IOT-Humidity/lib/drivers",
+                "C:/Users/guiom/Documents/GitHub/IOT-Humidity/lib/FreeRTOS/src",
                 "C:/Users/guiom/.platformio/packages/framework-arduino-avr/cores/arduino",
                 "C:/Users/guiom/.platformio/packages/framework-arduino-avr/variants/mega",
                 "C:/Users/guiom/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
@@ -24,10 +24,10 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "C:/Users/guiom/Documents/GitHub/WEB2_Assignment2/IOT/include",
-                    "C:/Users/guiom/Documents/GitHub/WEB2_Assignment2/IOT/src",
-                    "C:/Users/guiom/Documents/GitHub/WEB2_Assignment2/IOT/lib/FreeRTOS/src",
-                    "C:/Users/guiom/Documents/GitHub/WEB2_Assignment2/IOT/lib/drivers",
+                    "C:/Users/guiom/Documents/GitHub/IOT-Humidity/include",
+                    "C:/Users/guiom/Documents/GitHub/IOT-Humidity/src",
+                    "C:/Users/guiom/Documents/GitHub/IOT-Humidity/lib/drivers",
+                    "C:/Users/guiom/Documents/GitHub/IOT-Humidity/lib/FreeRTOS/src",
                     "C:/Users/guiom/.platformio/packages/framework-arduino-avr/cores/arduino",
                     "C:/Users/guiom/.platformio/packages/framework-arduino-avr/variants/mega",
                     "C:/Users/guiom/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
