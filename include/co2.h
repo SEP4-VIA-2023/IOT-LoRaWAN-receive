@@ -1,3 +1,8 @@
 #pragma once
+#include <stdio.h>
 
-int measureCo2();
+// must be called before FreeRTOS vTaskStartScheduler()
+void initialiseCO2();
+
+// Returns the CO2 value of the sensor
+uint16_t readCO2();
