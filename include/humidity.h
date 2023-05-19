@@ -13,4 +13,5 @@
 
 void initialiseHumidity();
 void measureHumidity();
-void humidityTask(void* parameter);
+void humiditySensorTask(void* pvParameters);
+void createHumidityTask(UBaseType_t TaskPriority);
