@@ -1,9 +1,19 @@
-#include <stdio.h>
-#include <stdbool.h>
-#include <avr/delay.h>
-#include <hih8120.h>
 #include "humidity.h"
+#include <hih8120.h>
 
+// FreeRTOS
+#include <ATMEGA_FreeRTOS.h>
+#include <task.h>
+#include <semphr.h>
+#include <queue.h>
+
+// Humidity Value
+uint16_t Humidity_Percentage;
+
+// Semaphore and Queue
+SemaphoreHandle_t humiditySemaphore;
+QueueHandle_t sensorDataQueue;
+EventGroupHandle_t dataEventGroup;
 
 /**
  * Initializes the humidity sensor and checks if the initialization was successful.
@@ -29,11 +39,44 @@ void initialiseHumidity()
  * This function performs the measurement of humidity.
  * It waits for the measure event to be triggered, wakes up the sensor, delays for the required startup time, measures the humidity, and fetches the data.
  * If the measurement is not successful, it retries a fixed number of times.
- * If the result is OK, it updates the _lastMeasurementHumidity variable and sets the new data event.
+ * If the result is OK, it updates the Humidity_Percentage variable and sets the new data event.
  */
 void measureHumidity()
 {
-    
+    // Wait for the measure event to be triggered
+    xEventGroupWaitBits(dataEventGroup, BIT_MEASURE, pdTRUE, pdTRUE, portMAX_DELAY);
+
+    hih8120_driverReturnCode_t result;
+
+    // Wake up the sensor from standby
+    result = hih8120_wakeup();
+
+    // After the sensor wakes up, it requires at least 15 ms to start measuring
+    vTaskDelay(pdMS_TO_TICKS(100));
+
+    // Perform the measurement
+    result = hih8120_measure();
+
+    // Requires a delay to fetch data from the sensor
+    vTaskDelay(pdMS_TO_TICKS(20));
+
+    if (result != HIH8120_OK)
+    {
+        // Retry a fixed number of times to get measurements from the sensor
+        int count = 15;
+        while ((result == HIH8120_TWI_BUSY) && count > 0)
+        {
+            result = hih8120_measure();
+            vTaskDelay(pdMS_TO_TICKS(20));
+            count--;
+        }
+    }
+
+    if (result == HIH8120_OK)
+    {
+        Humidity_Percentage = hih8120_getHumidityPercent_x10();
+        xEventGroupSetBits(dataEventGroup, BIT_HUMIDITY);
+    }
 }
 
 /**
@@ -41,32 +84,43 @@ void measureHumidity()
  */
 void humiditySensorTask(void *pvParameters)
 {
-  while (1)
-  {
-    uint16_t Humidity_Percentage = 0;
-    if (xSemaphoreTake(humiditySemaphore,portMAX_DELAY) == pdTRUE)
+    for (;;)
     {
-        measureHumidity();
-        Humidity_Percentage = hih8120_getHumidityPercent_x10();
-        printf("Humidity: %d\n", Humidity_Percentage);
-
+        if (xSemaphoreTake(humiditySemaphore, portMAX_DELAY) == pdTRUE)
+        {
+            measureHumidity();
+            printf("Humidity: %d\n", Humidity_Percentage);
+            xQueueSend(sensorDataQueue, &Humidity_Percentage, portMAX_DELAY);
+        }
+        vTaskDelay(pdMS_TO_TICKS(100));
     }
-    else
-    {
-        Humidity_Percentage = CONFIG_INVALID_HUMIDITY_VALUE;
-    }
-    xQueueSendToBack(sensorDataQueue, &Humidity_Percentage, portMAX_DELAY);
-    xEventGroupSetBits(dataEventGroup,BIT_HUMIDITY);
-  }
-  
 }
 
 /**
- * This function returns the last measured humidity value.
+ * This function initializes the humidity sensor task and related resources.
+ * It sets up the variables, creates the task, and initializes the driver.
  */
-void createHumidityTask (UBaseType_t TaskPriority)
+void createHumidityTask(UBaseType_t TaskPriority)
 {
-    
+    // Initialize variables
+    Humidity_Percentage = 0;
+
+    // Create semaphore, queue, and event group
+    humiditySemaphore = xSemaphoreCreateBinary();
+    sensorDataQueue = xQueueCreate(10, sizeof(uint16_t));
+    dataEventGroup = xEventGroupCreate();
+
+    // Start the humidity driver
+    initialiseHumidity();
+
+    // Task handler
+    TaskHandle_t humiditySensorTaskHandle = NULL;
+
+    // Task creation
+    xTaskCreate(humiditySensorTask,
+                "HumiditySensorTask",
+                configMINIMAL_STACK_SIZE,
+                NULL,
+                TaskPriority,
+                &humiditySensorTaskHandle);
 }
-
-
