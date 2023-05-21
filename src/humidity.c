@@ -37,7 +37,7 @@ void initialiseHumidity(UBaseType_t TaskPriority)
     TaskHandle_t humiditySensorTaskHandle = NULL;
 
     // Task creation
-    xTaskCreate(humiditySensorTask,
+    xTaskCreate(humiditySensorTaskHandle,
                 "HumiditySensorTask",
                 configMINIMAL_STACK_SIZE,
                 NULL,
