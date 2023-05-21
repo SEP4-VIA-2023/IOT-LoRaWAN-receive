@@ -19,11 +19,31 @@ EventGroupHandle_t dataEventGroup;
  * Initializes the humidity sensor and checks if the initialization was successful.
  * Prints a message indicating the status of the driver.
  */
-void initialiseHumidity()
+void initialiseHumidity(UBaseType_t TaskPriority)
 {
+    // Initialize variables
+    Humidity_Percentage = 0;
+
+    // Create semaphore, queue, and event group
+    humiditySemaphore = xSemaphoreCreateBinary();
+    sensorDataQueue = xQueueCreate(10, sizeof(uint16_t));
+    dataEventGroup = xEventGroupCreate();
+
     // Call the humidity sensor initialization function
     hih8120_driverReturnCode_t returncode = hih8120_initialise();
 
+
+    // Task handler
+    TaskHandle_t humiditySensorTaskHandle = NULL;
+
+    // Task creation
+    xTaskCreate(humiditySensorTask,
+                "HumiditySensorTask",
+                configMINIMAL_STACK_SIZE,
+                NULL,
+                TaskPriority,
+                &humiditySensorTaskHandle);
+    
     // Check if the initialization was successful
     if (returncode == HIH8120_OK)
     {
@@ -96,31 +116,3 @@ void humiditySensorTask(void *pvParameters)
     }
 }
 
-/**
- * This function initializes the humidity sensor task and related resources.
- * It sets up the variables, creates the task, and initializes the driver.
- */
-void createHumidityTask(UBaseType_t TaskPriority)
-{
-    // Initialize variables
-    Humidity_Percentage = 0;
-
-    // Create semaphore, queue, and event group
-    humiditySemaphore = xSemaphoreCreateBinary();
-    sensorDataQueue = xQueueCreate(10, sizeof(uint16_t));
-    dataEventGroup = xEventGroupCreate();
-
-    // Start the humidity driver
-    initialiseHumidity();
-
-    // Task handler
-    TaskHandle_t humiditySensorTaskHandle = NULL;
-
-    // Task creation
-    xTaskCreate(humiditySensorTask,
-                "HumiditySensorTask",
-                configMINIMAL_STACK_SIZE,
-                NULL,
-                TaskPriority,
-                &humiditySensorTaskHandle);
-}
