@@ -1,4 +1,4 @@
-#include "humidity.h"
+#include "humidity_and_temperature.h"
 #include <hih8120.h>
 
 // FreeRTOS
@@ -7,34 +7,36 @@
 #include <semphr.h>
 #include <queue.h>
 
-// Humidity Value
+// Humidity and Temperature Value
 uint16_t Humidity_Percentage;
+int16_t Temperature;
 
 // Semaphore and Queue
-SemaphoreHandle_t humiditySemaphore;
+SemaphoreHandle_t sensorSemaphore;
 QueueHandle_t sensorDataQueue;
 EventGroupHandle_t dataEventGroup;
+void humiditySensorTaskHandle(void *pvParameters);
 
 /**
- * Initializes the humidity sensor and checks if the initialization was successful.
+ * Initializes the humidity  and temperature sensor and checks if the initialization was successful.
  * Prints a message indicating the status of the driver.
  */
-void initialiseHumidity(UBaseType_t TaskPriority)
+void initialiseTask(UBaseType_t TaskPriority)
 {
     // Initialize variables
     Humidity_Percentage = 0;
+    Temperature = 0;
 
     // Create semaphore, queue, and event group
-    humiditySemaphore = xSemaphoreCreateBinary();
     sensorDataQueue = xQueueCreate(10, sizeof(uint16_t));
     dataEventGroup = xEventGroupCreate();
 
-    // Call the humidity sensor initialization function
+    // Call the  sensor initialization function
     hih8120_driverReturnCode_t returncode = hih8120_initialise();
 
 
     // Task handler
-    TaskHandle_t humiditySensorTaskHandle = NULL;
+    //TaskHandle_t humiditySensorTaskHandle = NULL;
 
     // Task creation
     xTaskCreate(humiditySensorTaskHandle,
@@ -42,12 +44,12 @@ void initialiseHumidity(UBaseType_t TaskPriority)
                 configMINIMAL_STACK_SIZE,
                 NULL,
                 TaskPriority,
-                &humiditySensorTaskHandle);
+                NULL);
     
     // Check if the initialization was successful
     if (returncode == HIH8120_OK)
     {
-        printf("Humidity driver has been initialized\n");
+        printf("Driver has been initialized\n");
     }
     else
     {
@@ -56,12 +58,12 @@ void initialiseHumidity(UBaseType_t TaskPriority)
 }
 
 /**
- * This function performs the measurement of humidity.
- * It waits for the measure event to be triggered, wakes up the sensor, delays for the required startup time, measures the humidity, and fetches the data.
+ * This function performs the measurement of humidity and temperature.
+ * It waits for the measure event to be triggered, wakes up the sensor, delays for the required startup time, measures the humidity and temperature, and fetches the data.
  * If the measurement is not successful, it retries a fixed number of times.
- * If the result is OK, it updates the Humidity_Percentage variable and sets the new data event.
+ * If the result is OK, it updates the Humidity_Percentage and Temperature variable and sets the new data event.
  */
-void measureHumidity()
+void TakeMeasurements()
 {
     // Wait for the measure event to be triggered
     xEventGroupWaitBits(dataEventGroup, BIT_MEASURE, pdTRUE, pdTRUE, portMAX_DELAY);
@@ -95,22 +97,32 @@ void measureHumidity()
     if (result == HIH8120_OK)
     {
         Humidity_Percentage = hih8120_getHumidityPercent_x10();
+        Temperature = hih8120_getTemperature_x10();
+        xEventGroupSetBits(dataEventGroup, BIT_TEMPERATURE);
         xEventGroupSetBits(dataEventGroup, BIT_HUMIDITY);
     }
 }
 
+uint16_t ReadHumidity(){
+    return Humidity_Percentage;
+}
+
+int16_t ReadTemperature(){
+    return Temperature;
+}
+
 /**
- * This is the task function that continuously calls the measureHumidity() function to perform humidity measurements.
+ * This is the task function that continuously calls the TakeMeasurements() function to perform humidity measurements.
  */
-void humiditySensorTask(void *pvParameters)
+void sensorTaskHandle(void *pvParameters)
 {
     for (;;)
     {
-        if (xSemaphoreTake(humiditySemaphore, portMAX_DELAY) == pdTRUE)
+        if (xSemaphoreTake(sensorSemaphore, portMAX_DELAY) == pdTRUE)
         {
-            measureHumidity();
+            TakeMeasurements();
             printf("Humidity: %d\n", Humidity_Percentage);
-            xQueueSend(sensorDataQueue, &Humidity_Percentage, portMAX_DELAY);
+            printf("Temperature: %d\n", Temperature);
         }
         vTaskDelay(pdMS_TO_TICKS(100));
     }

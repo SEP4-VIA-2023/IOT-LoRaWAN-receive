@@ -11,35 +11,34 @@
 #include <queue.h>
 #include <event_groups.h>
 
-// Humidity Value
-extern uint16_t Humidity_Percentage;
-
-// Semaphore and Queue
-extern SemaphoreHandle_t humiditySemaphore;
-extern QueueHandle_t sensorDataQueue;
-extern EventGroupHandle_t dataEventGroup;
 
 // Bit positions for events
 /**
- * BIT_MEASURE: Represents the event of a humidity measurement being triggered.
- * It is set in the dataEventGroup when a measurement is performed in the humiditySensorTask function.
+ * BIT_MEASURE: Represents the event of a humidity and temperature measurement being triggered.
+ * It is set in the dataEventGroup when a measurement is performed in the sensorTaskHandle function.
  * Other tasks can wait for this event to know when a measurement has been performed.
 */
 #define BIT_MEASURE   (1 << 0)
 
 /**
  * BIT_HUMIDITY: Represents the event of new humidity data being available.
- * It is set in the dataEventGroup when new humidity data is obtained in the humiditySensorTask function.
+ * It is set in the dataEventGroup when new humidity data is obtained in the sensorTaskHandle function.
  * Other tasks can wait for this event to know when new humidity data is ready for processing.
 */
 #define BIT_HUMIDITY  (1 << 1)
+/**
+ * BIT_TEMPERATURE: Represents the event of new temperaturw data being available.
+ * It is set in the dataEventGroup when new temperature data is obtained in the sensorTaskHandle function.
+ * Other tasks can wait for this event to know when new temperature data is ready for processing.
+*/
+#define BIT_TEMPERATURE (1 << 1)
 
 /**
- * Initializes the humidity sensor and checks if the initialization was successful.
+ * Initializes the humidity and temperature sensor and checks if the initialization was successful.
  * Prints a message indicating the status of the driver.
- * @param TaskPriority The priority of the humidity sensor task.
+ * @param TaskPriority The priority of the humidity and temperature sensor task.
  */
-void initialiseHumidity(UBaseType_t TaskPriority);
+void initialiseTask(UBaseType_t TaskPriority);
 
 /**
  * This function performs the measurement of humidity.
@@ -54,5 +53,7 @@ void initialiseHumidity(UBaseType_t TaskPriority);
  */
 //void humiditySensorTask(void *pvParameters);
 
+uint16_t ReadHumidity();
+int16_t ReadTemperature();
 
 #endif /* HUMIDITY_H */
