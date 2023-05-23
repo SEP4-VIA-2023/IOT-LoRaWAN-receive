@@ -12,7 +12,7 @@ uint16_t HUM;
 //TEM = Temperature
 int16_t TEM;
 
-void TEMHUMReadingLoop();
+void TEMHUMReadingLoop(void *pvParameters);
 
 void intitialiseTEMHUM(){
     hih8120_initialise();
