@@ -1,0 +1,1674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="IOT-LoRaWAN-receive"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Production">
+				<Option working_dir="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 Production"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Debug">
+				<Option working_dir="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 Debug"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET">
+				<Option output="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 Z_DUMMY_TARGET"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET/fast">
+				<Option output="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 Z_DUMMY_TARGET/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/.gitignore">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/Example/main.cexample">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/readme.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/.gitignore">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/ATMEGA_FreeRTOS.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/FreeRTOSConfig.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/FreeRTOSVariant.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/LICENSE.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/atomic.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/croutine.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/croutine.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/event_groups.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/event_groups.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/heap_4.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/history.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/list.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/list.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/message_buffer.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/mpu_wrappers.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/port.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/portable.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/portmacro.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/projdefs.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/queue.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/queue.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/semphr.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/stack_macros.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/stream_buffer.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/stream_buffer.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/task.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/tasks.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/timers.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/timers.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/FreeRTOS/src/variantHooks.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/.gitignore">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/DATASHEETS.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/Example/LoRaWANHandler.c.example">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/Example/WebsocketClient.java.example">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/Example/main.c.example">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/FreeRTOSTraceDriver.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/HARDWARE-DOC.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/LICENSE.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/LORA_NETWORK_SERVER.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/README.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/display_7seg.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/IoT_HAL.svg">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/_doxygen_main_page_8dox.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/annotated.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/annotated_dup.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/bc_s.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/bdwn.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/classes.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/closed.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/dir_4add8d7248e17903521621044f5370f8.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/dir_52c912f73dac9c4c0e442232e1b2bd80.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/dir_6dff7e51a7506716a97b97d6dc5c6ea1.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/display_7seg_driver_quickstart.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/display__7seg_8h.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/display__7seg_8h.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/display__7seg_8h__incl.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/display__7seg_8h__incl.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/display__7seg_8h_source.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/doc.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/Datasheets/RN2483 LoRa/RN2483 LoRa Technology Transceiver Module Data Sheet.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/Datasheets/RN2483 LoRa/RN2483-LoRa-Technology-Module-Command-Reference-User-Guide-DS40001784G.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/Datasheets/RN2483 LoRa/lora-click-schematic-v104.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/Datasheets/Sensors/HC-SR501 PIR/PIR HC-SR501.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/Datasheets/Sensors/HIH8000 Temp and RH Sensor/Honeywell Humidity-Temperature HIH8000 1927621.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/Datasheets/Sensors/HIH8000 Temp and RH Sensor/I2C Comms HumidIcon TN_009061-2-EN_Final_07Jun12.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/Datasheets/Sensors/MH-Z19 CO2/MH-Z19 CO2 Ver1.0.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/Datasheets/Sensors/TSL2591 Light Sensor/Manual adafruit-tsl2591.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/Datasheets/Sensors/TSL2591 Light Sensor/TSL25911_Datasheet_EN_v1.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/Datasheets/Sensors/TSL2591 Light Sensor/sensors_schematic.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/IoT Sensor Board/Sensor connection Schematic.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/IoT Sensor Board/Sensor connection board.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/Mikro Click Host Board/Mikro Click Host Board Schematic.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/Mikro Click Host Board/Mikro Click Host Board.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/VIA MEGA2560 Shield/MCU-Pin Usage.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/VIA MEGA2560 Shield/VIA Shield 2.0.0 Board.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/HW Doc/VIA MEGA2560 Shield/VIA Shield 2.0.0 Schematic.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/Loriot/Downlink.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/Loriot/Gateway.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/Loriot/Overview.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/Loriot/Uplink.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/documentation/Project_Setup/Setup 4. Semester Project.pdf">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/doxygen.css">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/doxygen.svg">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/driver_library/Iot driver Library.7z">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/driver_library/Loriot Output Data Format.7z">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/dynsections.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/example/WebsocketClient.java">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/example/loraWANHandler.cexample">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/example/main.cexample">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/files.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/files_dup.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/folderclosed.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/folderopen.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/functions.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/functions_vars.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/globals.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/globals_defs.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/globals_enum.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/globals_eval.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/globals_func.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/globals_type.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/graph_legend.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/graph_legend.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/graph_legend.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__display__7seg__driver.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__display__7seg__driver.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__display__7seg__driver.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__display__7seg__driver.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__display__7seg__driver__creation.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__display__7seg__driver__creation.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__display__7seg__driver__creation.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__display__7seg__driver__creation.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__display__7seg__driver__function.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__display__7seg__driver__function.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__display__7seg__driver__function.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__display__7seg__driver__function.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver__creation.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver__creation.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver__creation.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver__creation.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver__function.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver__function.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver__function.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver__function.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver__return__codes.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver__return__codes.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver__return__codes.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__hih8120__driver__return__codes.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__led__driver.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__led__driver.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__led__driver.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__led__driver.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__led__driver__basic__function.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__led__driver__basic__function.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__led__driver__basic__function.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__led__driver__basic__function.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__led__driver__creation.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__led__driver__creation.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__led__driver__creation.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__led__driver__creation.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__advanced__function.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__advanced__function.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__advanced__function.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__advanced__function.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__basic__function.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__basic__function.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__basic__function.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__basic__function.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__config.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__config.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__config.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__config.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__creation.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__creation.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__creation.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__creation.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__driver.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__driver.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__driver.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__driver.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__driver__return__codes.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__driver__return__codes.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__driver__return__codes.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__lora__driver__return__codes.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__advanced__function.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__advanced__function.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__advanced__function.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__advanced__function.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__basic__function.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__basic__function.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__basic__function.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__basic__function.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__creation.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__creation.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__creation.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__creation.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__driver__return__codes.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__driver__return__codes.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__driver__return__codes.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__mh__z19__driver__driver__return__codes.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__rc__servo__basic__function.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__rc__servo__basic__function.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__rc__servo__basic__function.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__rc__servo__basic__function.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__rc__servo__creation.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__rc__servo__creation.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__rc__servo__creation.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__rc__servo__creation.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__rc__servo__driver.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__rc__servo__driver.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__rc__servo__driver.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__rc__servo__driver.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sen14262__driver.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sen14262__driver.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sen14262__driver.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sen14262__driver.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sen14262__driver__basic__function.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sen14262__driver__basic__function.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sen14262__driver__basic__function.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sen14262__driver__basic__function.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sen14262__driver__creation.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sen14262__driver__creation.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sen14262__driver__creation.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sen14262__driver__creation.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sr501__driver.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sr501__driver.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sr501__driver.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sr501__driver.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sr501__driver__basic__function.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sr501__driver__basic__function.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sr501__driver__basic__function.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sr501__driver__basic__function.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sr501__driver__creation.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sr501__driver__creation.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sr501__driver__creation.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__sr501__driver__creation.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__stdio__driver.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__stdio__driver.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__stdio__driver.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__stdio__driver.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__stdio__driver__creation.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__stdio__driver__creation.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__stdio__driver__creation.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__stdio__driver__creation.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__stdio__driver__functions.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__stdio__driver__functions.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__stdio__driver__functions.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__stdio__driver__functions.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__basic__function.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__basic__function.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__basic__function.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__basic__function.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__creation.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__creation.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__creation.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__creation.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__return__codes.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__return__codes.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__return__codes.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__return__codes.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__structs.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__structs.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__structs.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/group__tsl2591__driver__structs.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/hcsr501_8h.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/hcsr501_8h.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/hcsr501_8h__incl.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/hcsr501_8h__incl.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/hcsr501_8h_source.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/hih8120_8h.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/hih8120_8h.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/hih8120_8h__incl.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/hih8120_8h__incl.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/hih8120_8h_source.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/hih8120_driver_quickstart.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/index.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/jquery.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/logo.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/lora__driver_8h.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/lora__driver_8h.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/lora__driver_8h__incl.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/lora__driver_8h__incl.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/lora__driver_8h_source.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/lora_driver_quickstart.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/lora_driver_quickstart.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/lora_receive_downlink_message.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/lora_send_uplink_message.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/lora_setup_to__a_b_p.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/lora_setup_to__o_t_a_a.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/megashielddoc/Documentation.7z">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/menu.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/menudata.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/mh__z19_8h.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/mh__z19_8h.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/mh__z19_8h__incl.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/mh__z19_8h__incl.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/mh__z19_8h_source.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/mh_z19_driver_quick_start.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/modules.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/modules.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/nav_f.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/nav_g.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/nav_h.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/navtree.css">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/navtree.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/navtreedata.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/navtreeindex0.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/navtreeindex1.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/open.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/pages.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/rc__servo_8h.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/rc__servo_8h.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/rc__servo_8h__incl.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/rc__servo_8h__incl.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/rc__servo_8h_source.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/resize.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/resources/Host Board Jumper.jpg">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/resources/IoT-Hardware Connections.jpg">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/resources/IoT-Hardware JTAG.jpg">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/resources/IoT-Hardware.jpg">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/resources/logo.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_0.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_0.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_1.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_1.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_10.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_10.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_2.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_2.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_3.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_3.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_4.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_4.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_5.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_5.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_6.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_6.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_7.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_7.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_8.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_8.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_9.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_9.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_a.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_a.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_b.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_b.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_c.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_c.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_d.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_d.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_e.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_e.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_f.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/all_f.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/classes_0.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/classes_0.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/classes_1.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/classes_1.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/close.svg">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/defines_0.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/defines_0.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enums_0.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enums_0.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enums_1.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enums_1.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enums_2.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enums_2.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enums_3.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enums_3.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enums_4.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enums_4.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enumvalues_0.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enumvalues_0.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enumvalues_1.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enumvalues_1.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enumvalues_2.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enumvalues_2.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enumvalues_3.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/enumvalues_3.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_0.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_0.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_1.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_1.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_2.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_2.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_3.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_3.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_4.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_4.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_5.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_5.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_6.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/files_6.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_0.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_0.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_1.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_1.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_2.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_2.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_3.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_3.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_4.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_4.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_5.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_5.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_6.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/functions_6.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_0.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_0.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_1.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_1.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_2.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_2.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_3.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_3.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_4.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_4.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_5.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_5.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_6.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_6.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_7.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_7.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_8.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_8.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_9.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_9.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_a.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/groups_a.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/mag_sel.svg">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/nomatches.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_0.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_0.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_1.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_1.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_2.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_2.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_3.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_3.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_4.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_4.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_5.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_5.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_6.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/pages_6.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/search.css">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/search.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/search_l.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/search_m.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/search_r.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/searchdata.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/typedefs_0.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/typedefs_0.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/typedefs_1.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/typedefs_1.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/variables_0.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/variables_0.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/variables_1.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/variables_1.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/variables_2.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/variables_2.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/variables_3.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/variables_3.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/variables_4.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/variables_4.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/variables_5.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/search/variables_5.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/sen14262_8h.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/sen14262_8h.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/sen14262_8h__incl.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/sen14262_8h__incl.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/sen14262_8h_source.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/sen14262_driver_quick_start.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/splitbar.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/sr501_driver_quick_start.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/status__leds_8h.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/status__leds_8h.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/status__leds_8h_source.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/stdio__driver_8h.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/stdio__driver_8h.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/stdio__driver_8h__incl.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/stdio__driver_8h__incl.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/stdio__driver_8h_source.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/structlora__driver__payload.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/structlora__driver__payload.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/structtsl2591__combined_data__t.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/structtsl2591__combined_data__t.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/svgpan.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/sync_off.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/sync_on.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/tab_a.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/tab_b.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/tab_h.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/tab_s.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/tabs.css">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/todo.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/tsl2591_8h.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/tsl2591_8h.js">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/tsl2591_8h__incl.md5">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/tsl2591_8h__incl.png">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/tsl2591_8h_source.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/docs/tsl2591_driver_quick_start.html">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/fifo.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/hcSr501.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/hih8120.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/libIotLibrary.a">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/lora_driver.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/lora_driver_utils.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/mh_z19.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/rc_servo.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/sen14262.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/serial.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/spi_iha.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/status_leds.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/stdio_driver.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/tsl2591.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/lib/drivers/twi.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/src/co2.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/src/loraWanHandler.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/src/main.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/src/temhum.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/CMakeListsPrivate.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

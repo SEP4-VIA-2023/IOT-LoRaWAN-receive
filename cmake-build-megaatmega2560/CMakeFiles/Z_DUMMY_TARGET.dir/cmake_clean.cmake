@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/croutine.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/croutine.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/event_groups.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/event_groups.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/heap_4.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/heap_4.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/list.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/list.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/port.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/port.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/queue.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/queue.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/stream_buffer.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/stream_buffer.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/tasks.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/tasks.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/timers.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/timers.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/variantHooks.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/variantHooks.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/src/co2.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/src/co2.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/src/loraWanHandler.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/src/loraWanHandler.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/src/main.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/src/main.c.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/src/temhum.c.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/src/temhum.c.obj.d"
+  "Z_DUMMY_TARGET"
+  "Z_DUMMY_TARGET.manifest"
+  "Z_DUMMY_TARGET.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/Z_DUMMY_TARGET.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
