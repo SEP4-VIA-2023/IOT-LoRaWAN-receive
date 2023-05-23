@@ -12,9 +12,12 @@
 #include <lora_driver.h>
 #include <status_leds.h>
 
+#include "co2.h"
+#include "humidity_and_temperature.h"
+
 // Parameters for OTAA join - You have got these in a mail from IHA
-#define LORA_appEUI "XXXXXXXXXXXXXXX"
-#define LORA_appKEY "YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY"
+#define LORA_appEUI "2BBE8F09765BBF4B"
+#define LORA_appKEY "5F83717BC67B4646E3F00DC5EC3417DC"
 
 void lora_handler_task( void *pvParameters );
 
@@ -118,7 +121,7 @@ void lora_handler_task( void *pvParameters )
 
 	_lora_setup();
 
-	_uplink_payload.len = 6;
+	_uplink_payload.len = 7;
 	_uplink_payload.portNo = 2;
 
 	TickType_t xLastWakeTime;
@@ -129,19 +132,22 @@ void lora_handler_task( void *pvParameters )
 	{
 		xTaskDelayUntil( &xLastWakeTime, xFrequency );
 
-		// Some dummy payload
-		uint16_t hum = 12345; // Dummy humidity
-		int16_t temp = 675; // Dummy temp
-		uint16_t co2_ppm = 1050; // Dummy CO2
+		// current data payload
+		uint16_t co2_ppm = readCO2(); 
+		uint16_t hum = ReadHumidity(); 
+		int16_t temp = ReadTemperature(); 
+		int servstatus;
+		servstatus = 1;
 
-		_uplink_payload.bytes[0] = hum >> 8;
-		_uplink_payload.bytes[1] = hum & 0xFF;
-		_uplink_payload.bytes[2] = temp >> 8;
-		_uplink_payload.bytes[3] = temp & 0xFF;
-		_uplink_payload.bytes[4] = co2_ppm >> 8;
-		_uplink_payload.bytes[5] = co2_ppm & 0xFF;
+		_uplink_payload.bytes[0] = co2_ppm >> 8; 		// most significant byte
+		_uplink_payload.bytes[1] = co2_ppm & 0xFF; 		// least significant byte
+		_uplink_payload.bytes[2] = hum >> 8; 			// most significant byte
+		_uplink_payload.bytes[3] = hum & 0xFF; 			// least significant byte
+		_uplink_payload.bytes[4] = temp >> 8; 			// most significant byte
+		_uplink_payload.bytes[5] = temp & 0xFF; 		// least significant byte
+		_uplink_payload.bytes[6] = servstatus & 0xFF; 	// 8bit boolean
 
-		status_leds_shortPuls(led_ST4);  // OPTIONAL
+		status_leds_shortPuls(led_ST4);  
 		printf("Upload Message >%s<\n", lora_driver_mapReturnCodeToText(lora_driver_sendUploadMessage(false, &_uplink_payload)));
 	}
 }

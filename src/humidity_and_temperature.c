@@ -1,4 +1,4 @@
-#include "temhum.h"
+#include "humidity_and_temperature.h"
 #include <hih8120.h>
 
 // FreeRTOS

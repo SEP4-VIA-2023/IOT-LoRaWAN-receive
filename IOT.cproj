@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
@@ -44,6 +44,18 @@
     </com_atmel_avrdbg_tool_atmelice>
     <avrtoolinterface>JTAG</avrtoolinterface>
     <avrtoolinterfaceclock>200000</avrtoolinterfaceclock>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+  <options />
+  <configurations />
+  <files />
+  <documentation help="" />
+  <offline-documentation help="" />
+  <dependencies>
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.52.0" />
+  </dependencies>
+</framework-data>
+    </AsfFrameworkConfig>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
@@ -140,7 +152,10 @@
     <Compile Include="include\co2.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="include\temhum.h">
+    <Compile Include="include\humidity_and_temperature.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\servo.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="lib\drivers\display_7seg.h">
@@ -284,13 +299,16 @@
     <Compile Include="src\co2.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="src\humidity_and_temperature.c">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="src\loraWANHandler.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\main.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\temhum.c">
+    <Compile Include="src\servo.c">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>
