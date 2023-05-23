@@ -18,7 +18,7 @@ void initialiseServo(UBaseType_t servoTaskPriority,
 					uint16_t minHumidity, uint16_t maxHumidity
 					);
 
-// Returns the CO2 value of the sensor
+// Returns the status of the servo (1 if it's moving)
 int readServoStatus();
 
 // Set new configuration
