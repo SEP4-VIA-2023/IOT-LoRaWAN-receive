@@ -91,3 +91,7 @@ void servoUpdateLoop(void *pvParameters) {
 		free(*hum);*/
 	}
 }
+
+int readServoStatus() {
+	return servoActive;
+}
