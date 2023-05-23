@@ -7,6 +7,7 @@
         "task.h": "c",
         "mh_z19.h": "c",
         "atmega_freertos.h": "c",
-        "humidity_and_temperature.h": "c"
+        "humidity_and_temperature.h": "c",
+        "stdbool.h": "c"
     }
 }
