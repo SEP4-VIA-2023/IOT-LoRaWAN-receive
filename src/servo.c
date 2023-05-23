@@ -48,6 +48,18 @@ void initialiseServo(UBaseType_t servoTaskPriority,
 	,  NULL );
 }
 
+void updateConfiguration(uint16_t minCO2, uint16_t maxCO2,
+int16_t minTemperature, int16_t maxTemperature,
+uint16_t minHumidity, uint16_t maxHumidity
+) {
+	minCO2_config = minCO2;
+	maxCO2_config = maxCO2;
+	minTemperature_config = minTemperature;
+	maxTemperature_config = maxTemperature;
+	minHumidity_config = minHumidity;
+	maxHumidity_config = maxHumidity;
+}
+
 // Continuously updates the servo activity
 void servoUpdateLoop(void *pvParameters) {
     TickType_t xLastWakeTime;
