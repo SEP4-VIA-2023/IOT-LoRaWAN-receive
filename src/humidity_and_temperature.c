@@ -14,7 +14,7 @@ int16_t TEM;
 
 void TEMHUMReadingLoop(void *pvParameters);
 
-void intitialiseTEMHUM(){
+void intitialiseTEMHUM(UBaseType_t TEMHUMPriority){
     hih8120_initialise();
     hih8120_wakeup();
     
@@ -22,15 +22,15 @@ void intitialiseTEMHUM(){
     HUM = 0;
     TEM = 0;
 
-//TEM and HUM values from the reading loop
-xTaskCreate(
-    TEMHUMReadingLoop
-    , "TEMHUMReadingLoop"
-    , configMINIMAL_STACK_SIZE 
-    , NULL
-    , 1
-    , NULL 
-);
+	//TEM and HUM values from the reading loop
+	xTaskCreate(
+	TEMHUMReadingLoop
+	, "TEMHUMReadingLoop"
+	, configMINIMAL_STACK_SIZE
+	, NULL
+	, TEMHUMPriority
+	, NULL
+	);
 
 }
 
