@@ -34,15 +34,11 @@ void CO2ReadingLoop(void *pvParameters) {
 	const TickType_t xFrequency = 1000/portTICK_PERIOD_MS; // 1000 ms
 	// Initialise the xLastWakeTime variable with the current time.
 	xLastWakeTime = xTaskGetTickCount();
-
+ 
 	for(;;) {
 		xTaskDelayUntil( &xLastWakeTime, xFrequency );
 		puts("Reading CO2 value..."); // stdio functions are not reentrant - Should normally be protected by MUTEX
-        //mh_z19_returnCode_t rc;
-        /*if (rc != OK) {
-            // Something went wrong
-            puts("Something went wrong while reading CO2 value!!!");
-        }*/
+		mh_z19_takeMeassuring();
 	}
 }
 
