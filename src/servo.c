@@ -38,6 +38,8 @@ void initialiseServo(UBaseType_t servoTaskPriority,
 	servoActive = 0;
 	
 	rc_servo_initialise();
+	rc_servo_setPosition(1, 0);
+
 	
 	xTaskCreate(
 	servoUpdateLoop
@@ -77,6 +79,7 @@ void servoUpdateLoop(void *pvParameters) {
 		int16_t temp = ReadTemperature();
 		
 		int needsAction;
+		needsAction = 0;
 		if (co2 > maxCO2_config || co2 < minCO2_config) {
 			needsAction = 1;
 		}
@@ -94,13 +97,6 @@ void servoUpdateLoop(void *pvParameters) {
 			rc_servo_setPosition(1, 100);
 		}
 		servoActive = needsAction;
-		
-		
-		// freeing up memory
-		/*free(*needsAction);
-		free(*co2);
-		free(*temp);
-		free(*hum);*/
 	}
 }
 
