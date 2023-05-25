@@ -36,4 +36,3 @@ TEST_F(CO2Test, ReadCO2) {
     // Check the result
     EXPECT_EQ(0, CO2);
 }
-

@@ -19,7 +19,8 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest )
 
 set(SOURCES_TEST
-    co2test.cpp
+    co2_test.cpp
+    hum_and_temp_test.cpp
     FreeRTOS_defs/FreeRTOS_FFF_MocksDefinitions.cpp
     #../src/task1.c
     ${SRCS}
