@@ -2,21 +2,7 @@
 #include <avr/io.h>
 #include <display_7seg.h>
 #include <avr/delay.h>
-  
-// main function -
-// where the execution of program begins
 
-
-
-/*
-* main.c
-* Author : IHA
-*
-* Example main file including LoRaWAN setup
-* Just for inspiration :)
-*/
-
-#include <stdio.h>
 
 #include <ATMEGA_FreeRTOS.h>
 #include <task.h>
@@ -118,7 +104,11 @@ void initialiseSystem()
 	display_7seg_powerUp();
 	initialiseCO2(2);
 	intitialiseTEMHUM(2);
-	initialiseServo(2,0,1000,50,500,0,1000);
+	initialiseServo(2,
+		0,700,
+		50,500,
+		0,1000,
+		100);
 	
 	
 	// Let's create some tasks
@@ -139,7 +129,7 @@ int main(void)
 	initialiseSystem(); // Must be done as the very first thing!!
 	
 	    
-	printf("Program Started!!\n");
+	//printf("Program Started!!\n");
 	vTaskStartScheduler(); // Initialise and run the freeRTOS scheduler. Execution should never return from here.
 
 	/* Replace with your application code */

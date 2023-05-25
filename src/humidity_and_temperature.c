@@ -2,7 +2,6 @@
 #include <hih8120.h>
 
 // FreeRTOS
-#include <ATMEGA_FreeRTOS.h>
 #include <task.h>
 #include <semphr.h>
 
@@ -40,13 +39,13 @@ void TEMHUMMeasure()
 
     if ( HIH8120_OK != hih8120_wakeup() )
     {
-        puts("Failed waking up the sensor");
+        //puts("Failed waking up the sensor");
     }
     vTaskDelay(pdMS_TO_TICKS(100));
 
     if ( HIH8120_OK !=  hih8120_measure() )
     {
-        puts("Failed measuring data");
+        //puts("Failed measuring data");
     }
 
     vTaskDelay(pdMS_TO_TICKS(20));
@@ -62,7 +61,7 @@ void TEMHUMReadingLoop(void *pvParameters)
 
     for(;;){
     xTaskDelayUntil( &xLastWakeTime, xFrequency );
-	puts("Reading Temperature and Humidity value...");
+	//puts("Reading Temperature and Humidity value...");
     TEMHUMMeasure();
     TEM =hih8120_getTemperature_x10();
     HUM = hih8120_getHumidityPercent_x10();

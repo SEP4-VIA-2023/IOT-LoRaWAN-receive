@@ -1,5 +1,4 @@
 #pragma once
-#include <stdio.h>
 #include <ATMEGA_FreeRTOS.h>
 
 // must be called before FreeRTOS vTaskStartScheduler()

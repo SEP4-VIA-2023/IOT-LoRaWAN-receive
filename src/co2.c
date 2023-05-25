@@ -2,7 +2,6 @@
 #include <mh_z19.h>
 
 // FreeRTOS
-#include <ATMEGA_FreeRTOS.h>
 #include <task.h>
 #include <semphr.h>
 
@@ -37,7 +36,7 @@ void CO2ReadingLoop(void *pvParameters) {
  
 	for(;;) {
 		xTaskDelayUntil( &xLastWakeTime, xFrequency );
-		puts("Reading CO2 value..."); // stdio functions are not reentrant - Should normally be protected by MUTEX
+		//puts("Reading CO2 value..."); // stdio functions are not reentrant - Should normally be protected by MUTEX
 		mh_z19_takeMeassuring();
 	}
 }
@@ -50,7 +49,7 @@ uint16_t readCO2() {
 // Called whenever a new CO2 value is read
 void CO2ReadingCallBack(uint16_t ppm)
 {
-    puts("CO2 value successfully read");
+    //puts("CO2 value successfully read");
     // Here you can use the CO2 ppm value
     CO2 = ppm;
 }
