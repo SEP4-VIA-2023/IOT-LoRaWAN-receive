@@ -118,7 +118,11 @@ void initialiseSystem()
 	display_7seg_powerUp();
 	initialiseCO2(2);
 	intitialiseTEMHUM(2);
-	initialiseServo(2,0,1000,50,500,0,1000);
+	initialiseServo(2,
+		0,700,
+		50,500,
+		0,1000,
+		100);
 	
 	
 	// Let's create some tasks

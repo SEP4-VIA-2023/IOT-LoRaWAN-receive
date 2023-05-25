@@ -15,27 +15,34 @@
 
 // private stuff
 void servoUpdateLoop(void *pvParameters);
-int servoActive;
 
-uint16_t minCO2_config;
-uint16_t maxCO2_config;
-int16_t minTemperature_config;
-int16_t maxTemperature_config;
-uint16_t minHumidity_config;
-uint16_t maxHumidity_config;
+struct Status status;
+struct Configuration configuration;
 
 void initialiseServo(UBaseType_t servoTaskPriority,
 	uint16_t minCO2, uint16_t maxCO2,
 	int16_t minTemperature, int16_t maxTemperature,
-	uint16_t minHumidity, uint16_t maxHumidity
+	uint16_t minHumidity, uint16_t maxHumidity,
+	int8_t degreeRotation
 ) {
-	minCO2_config = minCO2;
-	maxCO2_config = maxCO2;
-	minTemperature_config = minTemperature;
-	maxTemperature_config = maxTemperature;
-	minHumidity_config = minHumidity;
-	maxHumidity_config = maxHumidity;
-	servoActive = 0;
+	// allocate memory for the status
+	//configuration_ptr = (struct Configuration*) malloc(sizeof(struct Configuration));
+	//status_ptr = (struct Status*) malloc(sizeof(struct Status));
+	
+	// setting up initial status
+	status.CO2_value = 0;
+	status.humidity_value = 0;
+	status.temperature_value = 0;
+	status.servoDegrees = 0;
+	
+	// setting up initial configuration
+	configuration.degreeRotation = degreeRotation;
+	configuration.minCO2_config = minCO2;
+	configuration.maxCO2_config = maxCO2;
+	configuration.minHumidity_config = minHumidity;
+	configuration.maxHumidity_config = maxHumidity;
+	configuration.minTemperature_config = minTemperature;
+	configuration.maxTemperature_config = maxTemperature;
 	
 	rc_servo_initialise();
 	rc_servo_setPosition(1, 0);
@@ -51,15 +58,17 @@ void initialiseServo(UBaseType_t servoTaskPriority,
 }
 
 void updateConfiguration(uint16_t minCO2, uint16_t maxCO2,
-int16_t minTemperature, int16_t maxTemperature,
-uint16_t minHumidity, uint16_t maxHumidity
+	int16_t minTemperature, int16_t maxTemperature,
+	uint16_t minHumidity, uint16_t maxHumidity,
+	int8_t degreeRotation
 ) {
-	minCO2_config = minCO2;
-	maxCO2_config = maxCO2;
-	minTemperature_config = minTemperature;
-	maxTemperature_config = maxTemperature;
-	minHumidity_config = minHumidity;
-	maxHumidity_config = maxHumidity;
+	configuration.degreeRotation = degreeRotation;
+	configuration.minCO2_config = minCO2;
+	configuration.maxCO2_config = maxCO2;
+	configuration.minHumidity_config = minHumidity;
+	configuration.maxHumidity_config = maxHumidity;
+	configuration.minTemperature_config = minTemperature;
+	configuration.maxTemperature_config = maxTemperature;
 }
 
 // Continuously updates the servo activity
@@ -74,32 +83,50 @@ void servoUpdateLoop(void *pvParameters) {
 		//puts("Reading CO2 value..."); // stdio functions are not reentrant - Should normally be protected by MUTEX
         
 		// reading values
-		uint16_t co2 = readCO2();
-		uint16_t hum = ReadHumidity();
-		int16_t temp = ReadTemperature();
+		status.CO2_value = readCO2();
+		status.humidity_value = ReadHumidity();
+		status.temperature_value = ReadTemperature();
 		
 		int needsAction;
 		needsAction = 0;
-		if (co2 > maxCO2_config || co2 < minCO2_config) {
+		if (status.CO2_value > configuration.maxCO2_config ||
+			status.CO2_value < configuration.minCO2_config) {
 			needsAction = 1;
 		}
-		if (hum > maxHumidity_config || hum < minHumidity_config) {
+		if (status.humidity_value > configuration.maxHumidity_config ||
+			status.humidity_value < configuration.minHumidity_config) {
 			needsAction = 1;
 		}
-		if (temp > maxTemperature_config || temp < minTemperature_config) {
+		if (status.temperature_value > configuration.maxTemperature_config ||
+			status.temperature_value < configuration.minTemperature_config) {
 			needsAction = 1;
 		}
 		
 		// using J13 port
-		if (servoActive > needsAction) { // servo is moving, but doesnt have to
-			rc_servo_setPosition(1, 0);
-		} else if (servoActive < needsAction) { // servo is still, but has to move
-			rc_servo_setPosition(1, 100);
+		if (needsAction) {
+			// servo needs to move
+			if (status.servoDegrees != configuration.degreeRotation) {
+				// servo hasn't moved yet
+				rc_servo_setPosition(1, configuration.degreeRotation);
+				status.servoDegrees = configuration.degreeRotation;
+			}
+		} else {
+			// servo should be idle
+			if (status.servoDegrees != 0) {
+				// servo isn't idle, resetting position
+				rc_servo_setPosition(1, 0);
+				status.servoDegrees = 0;
+			}
 		}
-		servoActive = needsAction;
+		
+		//rc_servo_setPosition(1, configuration_ptr->degreeRotation);
 	}
 }
 
-int readServoStatus() {
-	return servoActive;
+struct Status* readStatus() {
+	return &status;
+}
+
+struct Configuration* readConfiguration() {
+	return &configuration;
 }
