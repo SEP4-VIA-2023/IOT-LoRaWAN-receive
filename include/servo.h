@@ -11,6 +11,7 @@
 #include <stdint.h>
 #include <ATMEGA_FreeRTOS.h>
 
+// Configuration to run the servo, degreeRotation should be from -100 to 100
 struct Configuration {
 	uint16_t minCO2_config;
 	uint16_t maxCO2_config;
@@ -21,6 +22,7 @@ struct Configuration {
 	int8_t degreeRotation;
 };
 
+// The status of the servo including what values it has read
 struct Status {
 	int8_t servoDegrees;
 	uint16_t CO2_value;
@@ -36,10 +38,10 @@ void initialiseServo(UBaseType_t servoTaskPriority,
 					int8_t degreeRotation
 					);
 
-// Returns the status of the servo including CO2, Humidity and Temperature readings
+// Returns a pointer to the status of the servo including CO2, Humidity and Temperature readings
 struct Status* readStatus();
 
-// Returns the current configuration that the servo is using
+// Returns a pointer to the current configuration that the servo is using
 struct Configuration* readConfiguration();
 
 // Set new configuration

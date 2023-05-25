@@ -16,7 +16,9 @@
 // private stuff
 void servoUpdateLoop(void *pvParameters);
 
+// servo status including what values it has read
 struct Status status;
+// the current configuration the servo runs on
 struct Configuration configuration;
 
 void initialiseServo(UBaseType_t servoTaskPriority,
@@ -25,10 +27,6 @@ void initialiseServo(UBaseType_t servoTaskPriority,
 	uint16_t minHumidity, uint16_t maxHumidity,
 	int8_t degreeRotation
 ) {
-	// allocate memory for the status
-	//configuration_ptr = (struct Configuration*) malloc(sizeof(struct Configuration));
-	//status_ptr = (struct Status*) malloc(sizeof(struct Status));
-	
 	// setting up initial status
 	status.CO2_value = 0;
 	status.humidity_value = 0;
@@ -118,8 +116,6 @@ void servoUpdateLoop(void *pvParameters) {
 				status.servoDegrees = 0;
 			}
 		}
-		
-		//rc_servo_setPosition(1, configuration_ptr->degreeRotation);
 	}
 }
 
