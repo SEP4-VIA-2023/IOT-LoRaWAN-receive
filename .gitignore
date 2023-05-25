@@ -2,6 +2,7 @@
 Release/
 Debug/
 .vscode/
+build/
 # PlatformIO
 .pio/
 

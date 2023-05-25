@@ -1,0 +1,60 @@
+#include "gtest/gtest.h"
+#include "fff.h"
+#include "FreeRTOS_FFF_MocksDeclaration.h"
+
+// Include interfaces and define global variables
+// defined by the production code
+extern "C"
+{
+#include "task1.h"
+#include "uart.h"
+#include "hal.h"
+}
+
+// Create Fake Driver functions
+FAKE_VOID_FUNC(uartInit, int);
+FAKE_VOID_FUNC(sendPicture);
+FAKE_VOID_FUNC(enable_push_button);
+FAKE_VALUE_FUNC(uint8_t, is_push_button_on);
+
+// Create Test fixture and Reset all Mocks before each test
+class Test_app : public ::testing::Test
+{
+protected:
+	void SetUp() override
+	{
+		RESET_FAKE(xTaskCreate);
+		RESET_FAKE(xSemaphoreTake);
+		RESET_FAKE(xSemaphoreGive);
+		RESET_FAKE(xTaskGetTickCount);
+		RESET_FAKE(xTaskDelayUntil);
+		RESET_FAKE(uartInit);
+		RESET_FAKE(sendPicture);
+		RESET_FAKE(is_push_button_on);
+		RESET_FAKE(enable_push_button);
+		FFF_RESET_HISTORY();
+	}
+	void TearDown() override
+	{}
+};
+
+// Test that the task is created correct
+TEST_F(Test_app, Test_createTask1)
+{
+	// Create the co2 task
+	createTask1();
+
+	// Is xTaskCreate called?
+	ASSERT_EQ(xTaskCreate_fake.call_count, 1);
+	// Check all arguments to xTaskCreate
+	ASSERT_EQ(xTaskCreate_fake.arg0_val, &task1);
+	ASSERT_EQ(strncmp(xTaskCreate_fake.arg1_val, "Task1", 8), 0);
+	ASSERT_EQ(xTaskCreate_fake.arg2_val, configMINIMAL_STACK_SIZE);
+	ASSERT_EQ(xTaskCreate_fake.arg3_val, nullptr);
+	ASSERT_EQ(xTaskCreate_fake.arg4_val, 1);
+	ASSERT_EQ(xTaskCreate_fake.arg5_val, nullptr);
+
+	// Is the UART initialized correct?
+	ASSERT_EQ(uartInit_fake.call_count, 1);
+	ASSERT_EQ(uartInit_fake.arg0_val, 9600);
+}
