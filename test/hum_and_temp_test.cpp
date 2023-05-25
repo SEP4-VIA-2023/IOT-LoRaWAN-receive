@@ -13,7 +13,7 @@ extern "C" {
 FAKE_VALUE_FUNC(hih8120_driverReturnCode_t, hih8120_measure);
 FAKE_VALUE_FUNC(int16_t, ReadTemperature);
 FAKE_VALUE_FUNC(uint16_t, ReadHumidity);
-
+FAKE_VOID_FUNC(initialiseTEMHUM, UBaseType_t);
 
 // Test fixture for TEMHUM functions
 class TEMHUMTest : public ::testing::Test {
@@ -21,12 +21,22 @@ protected:
     void SetUp() override {
         // Reset the fakes and clear the history before each test
         RESET_FAKE(hih8120_measure);
+        RESET_FAKE(initialiseTEMHUM);
         RESET_FAKE(ReadHumidity);
         RESET_FAKE(ReadTemperature);
         FFF_RESET_HISTORY();
     }
 };
 
+// Test the initialiseTEMHUM() function
+TEST_F(TEMHUMTest, initialiseTEMHUM) {
+    UBaseType_t TEMHUMPriority = 1;
+
+    initialiseTEMHUM(TEMHUMPriority);
+
+    EXPECT_EQ(1, initialiseTEMHUM_fake.arg0_history[0]);
+
+}
 
 // Test the ReadHumidity() function
 TEST_F(TEMHUMTest, ReadHumidity) {
