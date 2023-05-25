@@ -2,21 +2,7 @@
 #include <avr/io.h>
 #include <display_7seg.h>
 #include <avr/delay.h>
-  
-// main function -
-// where the execution of program begins
 
-
-
-/*
-* main.c
-* Author : IHA
-*
-* Example main file including LoRaWAN setup
-* Just for inspiration :)
-*/
-
-#include <stdio.h>
 
 #include <ATMEGA_FreeRTOS.h>
 #include <task.h>
@@ -143,7 +129,7 @@ int main(void)
 	initialiseSystem(); // Must be done as the very first thing!!
 	
 	    
-	printf("Program Started!!\n");
+	//printf("Program Started!!\n");
 	vTaskStartScheduler(); // Initialise and run the freeRTOS scheduler. Execution should never return from here.
 
 	/* Replace with your application code */

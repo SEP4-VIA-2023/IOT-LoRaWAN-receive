@@ -11,7 +11,6 @@
 #include <task.h>
 #include <semphr.h>
 #include <rc_servo.h>
-#include <stdlib.h>
 
 // private stuff
 void servoUpdateLoop(void *pvParameters);
