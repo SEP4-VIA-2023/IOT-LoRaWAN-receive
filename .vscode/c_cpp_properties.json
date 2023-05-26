@@ -1,30 +1,49 @@
-//
-// !!! WARNING !!! AUTO-GENERATED FILE!
-// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
-// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
-//
 {
     "configurations": [
         {
             "name": "PlatformIO",
             "includePath": [
-                    "C:/Users/guiom/Documents/GitHub/IOT/include",
-                    "C:/Users/guiom/Documents/GitHub/IOT/src",
-                    "C:/Users/guiom/Documents/GitHub/IOT/lib/drivers",
-                    "C:/Users/guiom/Documents/GitHub/IOT/lib/FreeRTOS/src",
-                    "C:/Users/guiom/.platformio/packages/framework-arduino-avr/cores/arduino",
-                    "C:/Users/guiom/.platformio/packages/framework-arduino-avr/variants/mega",
-                    "C:/Users/guiom/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
-                    "C:/Users/guiom/.platformio/packages/framework-arduino-avr/libraries/HID/src",
-                    "C:/Users/guiom/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
-                    "C:/Users/guiom/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
-                    "C:/Users/guiom/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/include",
+                "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/src",
+                "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/lib/drivers",
+                "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/lib/FreeRTOS/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/cores/MegaCore",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/variants/100-pin-arduino-mega",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/AVR_examples/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/EEPROM/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/Optiboot_flasher/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/SD/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/SPI/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/Servo/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/SoftwareSerial/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/Timer/src",
+                "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/Wire/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/include",
+                    "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/src",
+                    "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/lib/drivers",
+                    "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/lib/FreeRTOS/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/cores/MegaCore",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/variants/100-pin-arduino-mega",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/AVR_examples/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/EEPROM/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/Optiboot_flasher/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/SD/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/SPI/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/Servo/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/SoftwareSerial/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/Timer/src",
+                    "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/Wire/src",
                     ""
                 ]
             },
             "defines": [
                 "PLATFORMIO=60107",
-                "ARDUINO_AVR_MEGA2560",
+                "ARDUINO_AVR_ATmega2560",
                 "F_CPU=16000000L",
                 "ARDUINO_ARCH_AVR",
                 "ARDUINO=10808",
@@ -32,12 +51,13 @@
                 ""
             ],
             "cStandard": "c11",
-            "cppStandard": "c++11",
-            "compilerPath": "C:/Users/45552/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "cppStandard": "c++17",
+            "compilerPath": "C:/Users/andrejs/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
             "compilerArgs": [
                 "-mmcu=atmega2560",
                 ""
-            ]
+            ],
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4
