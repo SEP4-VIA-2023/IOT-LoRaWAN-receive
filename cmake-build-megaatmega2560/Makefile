@@ -84,6 +84,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\45552\Desktop\VIA_UC\Semester4\SEP4\IOT-LoRaWAN-receive\cmake-build-megaatmega2560\CMakeFiles C:\Users\45552\Desktop\VIA_UC\Semester4\SEP4\IOT-LoRaWAN-receive\cmake-build-megaatmega2560\\CMakeFiles\progress.marks
@@ -116,403 +161,69 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Production
+# Target rules for targets named IOT
 
 # Build rule for target.
-Production: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Production
-.PHONY : Production
+IOT: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 IOT
+.PHONY : IOT
 
 # fast build rule for target.
-Production/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Production.dir\build.make CMakeFiles/Production.dir/build
-.PHONY : Production/fast
+IOT/fast:
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\IOT.dir\build.make test/CMakeFiles/IOT.dir/build
+.PHONY : IOT/fast
 
 #=============================================================================
-# Target rules for targets named Debug
+# Target rules for targets named gmock
 
 # Build rule for target.
-Debug: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Debug
-.PHONY : Debug
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
 
 # fast build rule for target.
-Debug/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Debug.dir\build.make CMakeFiles/Debug.dir/build
-.PHONY : Debug/fast
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
 
 #=============================================================================
-# Target rules for targets named Z_DUMMY_TARGET
+# Target rules for targets named gmock_main
 
 # Build rule for target.
-Z_DUMMY_TARGET: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Z_DUMMY_TARGET
-.PHONY : Z_DUMMY_TARGET
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
 
 # fast build rule for target.
-Z_DUMMY_TARGET/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/build
-.PHONY : Z_DUMMY_TARGET/fast
-
-lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.obj: lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.obj
-.PHONY : lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.obj
-
-# target to build an object file
-lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.obj
-.PHONY : lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.obj
-
-lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.i: lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.i
-.PHONY : lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.i
-
-# target to preprocess a source file
-lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.i
-.PHONY : lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.i
-
-lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.s: lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.s
-.PHONY : lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.s
-
-# target to generate assembly for a file
-lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.s
-.PHONY : lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.c.s
-
-lib/FreeRTOS/src/croutine.obj: lib/FreeRTOS/src/croutine.c.obj
-.PHONY : lib/FreeRTOS/src/croutine.obj
-
-# target to build an object file
-lib/FreeRTOS/src/croutine.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/croutine.c.obj
-.PHONY : lib/FreeRTOS/src/croutine.c.obj
-
-lib/FreeRTOS/src/croutine.i: lib/FreeRTOS/src/croutine.c.i
-.PHONY : lib/FreeRTOS/src/croutine.i
-
-# target to preprocess a source file
-lib/FreeRTOS/src/croutine.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/croutine.c.i
-.PHONY : lib/FreeRTOS/src/croutine.c.i
-
-lib/FreeRTOS/src/croutine.s: lib/FreeRTOS/src/croutine.c.s
-.PHONY : lib/FreeRTOS/src/croutine.s
-
-# target to generate assembly for a file
-lib/FreeRTOS/src/croutine.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/croutine.c.s
-.PHONY : lib/FreeRTOS/src/croutine.c.s
-
-lib/FreeRTOS/src/event_groups.obj: lib/FreeRTOS/src/event_groups.c.obj
-.PHONY : lib/FreeRTOS/src/event_groups.obj
-
-# target to build an object file
-lib/FreeRTOS/src/event_groups.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/event_groups.c.obj
-.PHONY : lib/FreeRTOS/src/event_groups.c.obj
-
-lib/FreeRTOS/src/event_groups.i: lib/FreeRTOS/src/event_groups.c.i
-.PHONY : lib/FreeRTOS/src/event_groups.i
-
-# target to preprocess a source file
-lib/FreeRTOS/src/event_groups.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/event_groups.c.i
-.PHONY : lib/FreeRTOS/src/event_groups.c.i
-
-lib/FreeRTOS/src/event_groups.s: lib/FreeRTOS/src/event_groups.c.s
-.PHONY : lib/FreeRTOS/src/event_groups.s
-
-# target to generate assembly for a file
-lib/FreeRTOS/src/event_groups.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/event_groups.c.s
-.PHONY : lib/FreeRTOS/src/event_groups.c.s
-
-lib/FreeRTOS/src/heap_4.obj: lib/FreeRTOS/src/heap_4.c.obj
-.PHONY : lib/FreeRTOS/src/heap_4.obj
-
-# target to build an object file
-lib/FreeRTOS/src/heap_4.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/heap_4.c.obj
-.PHONY : lib/FreeRTOS/src/heap_4.c.obj
-
-lib/FreeRTOS/src/heap_4.i: lib/FreeRTOS/src/heap_4.c.i
-.PHONY : lib/FreeRTOS/src/heap_4.i
-
-# target to preprocess a source file
-lib/FreeRTOS/src/heap_4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/heap_4.c.i
-.PHONY : lib/FreeRTOS/src/heap_4.c.i
-
-lib/FreeRTOS/src/heap_4.s: lib/FreeRTOS/src/heap_4.c.s
-.PHONY : lib/FreeRTOS/src/heap_4.s
-
-# target to generate assembly for a file
-lib/FreeRTOS/src/heap_4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/heap_4.c.s
-.PHONY : lib/FreeRTOS/src/heap_4.c.s
-
-lib/FreeRTOS/src/list.obj: lib/FreeRTOS/src/list.c.obj
-.PHONY : lib/FreeRTOS/src/list.obj
-
-# target to build an object file
-lib/FreeRTOS/src/list.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/list.c.obj
-.PHONY : lib/FreeRTOS/src/list.c.obj
-
-lib/FreeRTOS/src/list.i: lib/FreeRTOS/src/list.c.i
-.PHONY : lib/FreeRTOS/src/list.i
-
-# target to preprocess a source file
-lib/FreeRTOS/src/list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/list.c.i
-.PHONY : lib/FreeRTOS/src/list.c.i
-
-lib/FreeRTOS/src/list.s: lib/FreeRTOS/src/list.c.s
-.PHONY : lib/FreeRTOS/src/list.s
-
-# target to generate assembly for a file
-lib/FreeRTOS/src/list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/list.c.s
-.PHONY : lib/FreeRTOS/src/list.c.s
-
-lib/FreeRTOS/src/port.obj: lib/FreeRTOS/src/port.c.obj
-.PHONY : lib/FreeRTOS/src/port.obj
-
-# target to build an object file
-lib/FreeRTOS/src/port.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/port.c.obj
-.PHONY : lib/FreeRTOS/src/port.c.obj
-
-lib/FreeRTOS/src/port.i: lib/FreeRTOS/src/port.c.i
-.PHONY : lib/FreeRTOS/src/port.i
-
-# target to preprocess a source file
-lib/FreeRTOS/src/port.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/port.c.i
-.PHONY : lib/FreeRTOS/src/port.c.i
-
-lib/FreeRTOS/src/port.s: lib/FreeRTOS/src/port.c.s
-.PHONY : lib/FreeRTOS/src/port.s
-
-# target to generate assembly for a file
-lib/FreeRTOS/src/port.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/port.c.s
-.PHONY : lib/FreeRTOS/src/port.c.s
-
-lib/FreeRTOS/src/queue.obj: lib/FreeRTOS/src/queue.c.obj
-.PHONY : lib/FreeRTOS/src/queue.obj
-
-# target to build an object file
-lib/FreeRTOS/src/queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/queue.c.obj
-.PHONY : lib/FreeRTOS/src/queue.c.obj
-
-lib/FreeRTOS/src/queue.i: lib/FreeRTOS/src/queue.c.i
-.PHONY : lib/FreeRTOS/src/queue.i
-
-# target to preprocess a source file
-lib/FreeRTOS/src/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/queue.c.i
-.PHONY : lib/FreeRTOS/src/queue.c.i
-
-lib/FreeRTOS/src/queue.s: lib/FreeRTOS/src/queue.c.s
-.PHONY : lib/FreeRTOS/src/queue.s
-
-# target to generate assembly for a file
-lib/FreeRTOS/src/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/queue.c.s
-.PHONY : lib/FreeRTOS/src/queue.c.s
-
-lib/FreeRTOS/src/stream_buffer.obj: lib/FreeRTOS/src/stream_buffer.c.obj
-.PHONY : lib/FreeRTOS/src/stream_buffer.obj
-
-# target to build an object file
-lib/FreeRTOS/src/stream_buffer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/stream_buffer.c.obj
-.PHONY : lib/FreeRTOS/src/stream_buffer.c.obj
-
-lib/FreeRTOS/src/stream_buffer.i: lib/FreeRTOS/src/stream_buffer.c.i
-.PHONY : lib/FreeRTOS/src/stream_buffer.i
-
-# target to preprocess a source file
-lib/FreeRTOS/src/stream_buffer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/stream_buffer.c.i
-.PHONY : lib/FreeRTOS/src/stream_buffer.c.i
-
-lib/FreeRTOS/src/stream_buffer.s: lib/FreeRTOS/src/stream_buffer.c.s
-.PHONY : lib/FreeRTOS/src/stream_buffer.s
-
-# target to generate assembly for a file
-lib/FreeRTOS/src/stream_buffer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/stream_buffer.c.s
-.PHONY : lib/FreeRTOS/src/stream_buffer.c.s
-
-lib/FreeRTOS/src/tasks.obj: lib/FreeRTOS/src/tasks.c.obj
-.PHONY : lib/FreeRTOS/src/tasks.obj
-
-# target to build an object file
-lib/FreeRTOS/src/tasks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/tasks.c.obj
-.PHONY : lib/FreeRTOS/src/tasks.c.obj
-
-lib/FreeRTOS/src/tasks.i: lib/FreeRTOS/src/tasks.c.i
-.PHONY : lib/FreeRTOS/src/tasks.i
-
-# target to preprocess a source file
-lib/FreeRTOS/src/tasks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/tasks.c.i
-.PHONY : lib/FreeRTOS/src/tasks.c.i
-
-lib/FreeRTOS/src/tasks.s: lib/FreeRTOS/src/tasks.c.s
-.PHONY : lib/FreeRTOS/src/tasks.s
-
-# target to generate assembly for a file
-lib/FreeRTOS/src/tasks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/tasks.c.s
-.PHONY : lib/FreeRTOS/src/tasks.c.s
-
-lib/FreeRTOS/src/timers.obj: lib/FreeRTOS/src/timers.c.obj
-.PHONY : lib/FreeRTOS/src/timers.obj
-
-# target to build an object file
-lib/FreeRTOS/src/timers.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/timers.c.obj
-.PHONY : lib/FreeRTOS/src/timers.c.obj
-
-lib/FreeRTOS/src/timers.i: lib/FreeRTOS/src/timers.c.i
-.PHONY : lib/FreeRTOS/src/timers.i
-
-# target to preprocess a source file
-lib/FreeRTOS/src/timers.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/timers.c.i
-.PHONY : lib/FreeRTOS/src/timers.c.i
-
-lib/FreeRTOS/src/timers.s: lib/FreeRTOS/src/timers.c.s
-.PHONY : lib/FreeRTOS/src/timers.s
-
-# target to generate assembly for a file
-lib/FreeRTOS/src/timers.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/timers.c.s
-.PHONY : lib/FreeRTOS/src/timers.c.s
-
-lib/FreeRTOS/src/variantHooks.obj: lib/FreeRTOS/src/variantHooks.c.obj
-.PHONY : lib/FreeRTOS/src/variantHooks.obj
-
-# target to build an object file
-lib/FreeRTOS/src/variantHooks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/variantHooks.c.obj
-.PHONY : lib/FreeRTOS/src/variantHooks.c.obj
-
-lib/FreeRTOS/src/variantHooks.i: lib/FreeRTOS/src/variantHooks.c.i
-.PHONY : lib/FreeRTOS/src/variantHooks.i
-
-# target to preprocess a source file
-lib/FreeRTOS/src/variantHooks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/variantHooks.c.i
-.PHONY : lib/FreeRTOS/src/variantHooks.c.i
-
-lib/FreeRTOS/src/variantHooks.s: lib/FreeRTOS/src/variantHooks.c.s
-.PHONY : lib/FreeRTOS/src/variantHooks.s
-
-# target to generate assembly for a file
-lib/FreeRTOS/src/variantHooks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/lib/FreeRTOS/src/variantHooks.c.s
-.PHONY : lib/FreeRTOS/src/variantHooks.c.s
-
-src/co2.obj: src/co2.c.obj
-.PHONY : src/co2.obj
-
-# target to build an object file
-src/co2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/co2.c.obj
-.PHONY : src/co2.c.obj
-
-src/co2.i: src/co2.c.i
-.PHONY : src/co2.i
-
-# target to preprocess a source file
-src/co2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/co2.c.i
-.PHONY : src/co2.c.i
-
-src/co2.s: src/co2.c.s
-.PHONY : src/co2.s
-
-# target to generate assembly for a file
-src/co2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/co2.c.s
-.PHONY : src/co2.c.s
-
-src/loraWanHandler.obj: src/loraWanHandler.c.obj
-.PHONY : src/loraWanHandler.obj
-
-# target to build an object file
-src/loraWanHandler.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/loraWanHandler.c.obj
-.PHONY : src/loraWanHandler.c.obj
-
-src/loraWanHandler.i: src/loraWanHandler.c.i
-.PHONY : src/loraWanHandler.i
-
-# target to preprocess a source file
-src/loraWanHandler.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/loraWanHandler.c.i
-.PHONY : src/loraWanHandler.c.i
-
-src/loraWanHandler.s: src/loraWanHandler.c.s
-.PHONY : src/loraWanHandler.s
-
-# target to generate assembly for a file
-src/loraWanHandler.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/loraWanHandler.c.s
-.PHONY : src/loraWanHandler.c.s
-
-src/main.obj: src/main.c.obj
-.PHONY : src/main.obj
-
-# target to build an object file
-src/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/main.c.obj
-.PHONY : src/main.c.obj
-
-src/main.i: src/main.c.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/main.c.i
-.PHONY : src/main.c.i
-
-src/main.s: src/main.c.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/main.c.s
-.PHONY : src/main.c.s
-
-src/temhum.obj: src/temhum.c.obj
-.PHONY : src/temhum.obj
-
-# target to build an object file
-src/temhum.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/temhum.c.obj
-.PHONY : src/temhum.c.obj
-
-src/temhum.i: src/temhum.c.i
-.PHONY : src/temhum.i
-
-# target to preprocess a source file
-src/temhum.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/temhum.c.i
-.PHONY : src/temhum.c.i
-
-src/temhum.s: src/temhum.c.s
-.PHONY : src/temhum.s
-
-# target to generate assembly for a file
-src/temhum.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Z_DUMMY_TARGET.dir\build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/temhum.c.s
-.PHONY : src/temhum.c.s
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
 
 # Help Target
 help:
@@ -521,55 +232,16 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... Debug
-	@echo ... Production
-	@echo ... Z_DUMMY_TARGET
-	@echo ... lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.obj
-	@echo ... lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.i
-	@echo ... lib/FreeRTOS/FreeRTOSTraceDriver/FreeRTOSTraceDriver.s
-	@echo ... lib/FreeRTOS/src/croutine.obj
-	@echo ... lib/FreeRTOS/src/croutine.i
-	@echo ... lib/FreeRTOS/src/croutine.s
-	@echo ... lib/FreeRTOS/src/event_groups.obj
-	@echo ... lib/FreeRTOS/src/event_groups.i
-	@echo ... lib/FreeRTOS/src/event_groups.s
-	@echo ... lib/FreeRTOS/src/heap_4.obj
-	@echo ... lib/FreeRTOS/src/heap_4.i
-	@echo ... lib/FreeRTOS/src/heap_4.s
-	@echo ... lib/FreeRTOS/src/list.obj
-	@echo ... lib/FreeRTOS/src/list.i
-	@echo ... lib/FreeRTOS/src/list.s
-	@echo ... lib/FreeRTOS/src/port.obj
-	@echo ... lib/FreeRTOS/src/port.i
-	@echo ... lib/FreeRTOS/src/port.s
-	@echo ... lib/FreeRTOS/src/queue.obj
-	@echo ... lib/FreeRTOS/src/queue.i
-	@echo ... lib/FreeRTOS/src/queue.s
-	@echo ... lib/FreeRTOS/src/stream_buffer.obj
-	@echo ... lib/FreeRTOS/src/stream_buffer.i
-	@echo ... lib/FreeRTOS/src/stream_buffer.s
-	@echo ... lib/FreeRTOS/src/tasks.obj
-	@echo ... lib/FreeRTOS/src/tasks.i
-	@echo ... lib/FreeRTOS/src/tasks.s
-	@echo ... lib/FreeRTOS/src/timers.obj
-	@echo ... lib/FreeRTOS/src/timers.i
-	@echo ... lib/FreeRTOS/src/timers.s
-	@echo ... lib/FreeRTOS/src/variantHooks.obj
-	@echo ... lib/FreeRTOS/src/variantHooks.i
-	@echo ... lib/FreeRTOS/src/variantHooks.s
-	@echo ... src/co2.obj
-	@echo ... src/co2.i
-	@echo ... src/co2.s
-	@echo ... src/loraWanHandler.obj
-	@echo ... src/loraWanHandler.i
-	@echo ... src/loraWanHandler.s
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
-	@echo ... src/temhum.obj
-	@echo ... src/temhum.i
-	@echo ... src/temhum.s
+	@echo ... IOT
+	@echo ... gmock
+	@echo ... gmock_main
+	@echo ... gtest
+	@echo ... gtest_main
 .PHONY : help
 
 

@@ -25,7 +25,7 @@ set(SOURCES_TEST
     FreeRTOS_defs/FreeRTOS_FFF_MocksDefinitions.cpp
     #../src/task1.c
     ${SRCS}
-)
+        ../src/loraWanHandler.c ../src/servo.c ../src/main.c ../src/humidity_and_temperature.c ../src/co2.c ../main.c)
 
 # This makes the test.cpp files able to #include target libraries without errors.  
 include_directories(

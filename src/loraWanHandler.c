@@ -1,9 +1,3 @@
-/*
-* loraWANHandler.c
-*
-* Created: 12/04/2019 10:09:05
-*  Author: IHA
-*/
 #include <stddef.h>
 #include <stdio.h>
 
@@ -11,12 +5,10 @@
 
 #include <lora_driver.h>
 #include <status_leds.h>
-#include <stdlib.h>
 
-#include "co2.h"
-#include "humidity_and_temperature.h"
 #include "servo.h"
 #include "display_7seg.h"
+#include "../lib/FreeRTOS/src/FreeRTOSVariant.h"
 
 // Parameters for OTAA join - You have got these in a mail from IHA
 #define LORA_appEUI "2BBE8F09765BBF4B"
@@ -32,7 +24,7 @@ MessageBufferHandle_t downlink_message_buffer;
 void lora_handler_initialise(UBaseType_t lora_handler_task_priority)
 {
     // message buffer for downlink messages
-    downlink_message_buffer = xMessageBufferCreate(sizeof(lora_driver_payload_t));
+    downlink_message_buffer = xMessageBufferCreate(sizeof(lora_driver_payload_t)*2);
 
     // Initialise the LoRaWAN driver without down-link buffer
     lora_driver_initialise(1, downlink_message_buffer);
@@ -149,7 +141,6 @@ void lora_handler_task( void *pvParameters )
 	_uplink_payload.len = 7;
 	_uplink_payload.portNo = 2;
 
-    _downlink_payload.len = 12;
     _downlink_payload.portNo = 1;
 
 	TickType_t xLastWakeTime;
@@ -164,11 +155,10 @@ void lora_handler_task( void *pvParameters )
 		xTaskDelayUntil( &xLastWakeTime, xFrequency );
 
 		// current data payload
-		uint16_t co2_ppm = readCO2(); 
-		uint16_t hum = ReadHumidity(); 
-		int16_t temp = ReadTemperature(); 
-		int servstatus;
-		servstatus = 1;
+		uint16_t co2_ppm = readStatus()->CO2_value;
+		uint16_t hum = readStatus()->humidity_value;
+		int16_t temp = readStatus()->temperature_value;
+        int8_t servstatus = readStatus()->servoDegrees;
 
 		_uplink_payload.bytes[0] = co2_ppm >> 8; 		// most significant byte
 		_uplink_payload.bytes[1] = co2_ppm & 0xFF; 		// least significant byte
@@ -176,14 +166,10 @@ void lora_handler_task( void *pvParameters )
 		_uplink_payload.bytes[3] = hum & 0xFF; 			// least significant byte
 		_uplink_payload.bytes[4] = temp >> 8; 			// most significant byte
 		_uplink_payload.bytes[5] = temp & 0xFF; 		// least significant byte
-		_uplink_payload.bytes[6] = servstatus & 0xFF; 	// 8bit boolean
+		_uplink_payload.bytes[6] = servstatus & 0xFF; 	// 8bit degrees
 
 		status_leds_ledOn(led_ST4);
-		/*
-		 * printf("Upload Message >%s<\n",
-               lora_driver_mapReturnCodeToText(lora_driver_sendUploadMessage(false, &_uplink_payload)));
-        */
-        //rc = lora_driver_sendUploadMessage(false, &_uplink_payload);
+
         if ((rc = lora_driver_sendUploadMessage(false, &_uplink_payload)) == LORA_MAC_TX_OK)
         {
             status_leds_longPuls(led_ST4);
@@ -210,67 +196,34 @@ void lora_handler_task( void *pvParameters )
                 display_7seg_display(_downlink_payload.len, 0);
 
                 // check we receive the correct size of the payload
-                if (_downlink_payload.len == 12)
+                if (_downlink_payload.len == 13)
                 {
                     // fast blink led_ST4 to indicate the payload has the correct size
                     status_leds_fastBlink(led_ST4);
-                    // pointers for each variable of the payload
-                    uint16_t *minCO2_ptr;
-                    uint16_t *maxCO2_ptr;
-                    uint16_t *minHum_ptr;
-                    uint16_t *maxHum_ptr;
-                    int16_t *minTemp_ptr;
-                    int16_t *maxTemp_ptr;
 
-                    // allocate memory for the values
-                    minCO2_ptr = malloc(sizeof(uint16_t));
-                    maxCO2_ptr = malloc(sizeof(uint16_t));
-                    minHum_ptr = malloc(sizeof(uint16_t));
-                    maxHum_ptr = malloc(sizeof(uint16_t));
-                    minTemp_ptr = malloc(sizeof(int16_t));
-                    maxTemp_ptr = malloc(sizeof(int16_t));
+                    uint16_t minCO2;
+                    uint16_t maxCO2;
+                    uint16_t minHum;
+                    uint16_t maxHum;
+                    int16_t minTemp;
+                    int16_t maxTemp;
+                    int8_t servstatus;
 
                     // decode the payload into the variables through the pointers
-                    *minCO2_ptr = (_downlink_payload.bytes[0] << 8) | _downlink_payload.bytes[1];
-                    *maxCO2_ptr = (_downlink_payload.bytes[2] << 8) | _downlink_payload.bytes[3];
-                    *minHum_ptr = (_downlink_payload.bytes[4] << 8) | _downlink_payload.bytes[5];
-                    *maxHum_ptr = (_downlink_payload.bytes[6] << 8) | _downlink_payload.bytes[7];
-                    *minTemp_ptr = (_downlink_payload.bytes[8] << 8) | _downlink_payload.bytes[9];
-                    *maxTemp_ptr = (_downlink_payload.bytes[10] << 8) | _downlink_payload.bytes[11];
+                    minCO2 = (_downlink_payload.bytes[0] << 8) | _downlink_payload.bytes[1];
+                    maxCO2 = (_downlink_payload.bytes[2] << 8) | _downlink_payload.bytes[3];
+                    minHum = (_downlink_payload.bytes[4] << 8) | _downlink_payload.bytes[5];
+                    maxHum = (_downlink_payload.bytes[6] << 8) | _downlink_payload.bytes[7];
+                    minTemp = (_downlink_payload.bytes[8] << 8) | _downlink_payload.bytes[9];
+                    maxTemp = (_downlink_payload.bytes[10] << 8) | _downlink_payload.bytes[11];
+                    servstatus = _downlink_payload.bytes[12];
 
                     // use the values to update the servo configuration
-                    updateConfiguration(*minCO2_ptr, *maxCO2_ptr, *minTemp_ptr,
-                                        *maxTemp_ptr, *minHum_ptr, *maxHum_ptr);
-
-                    // if statement for debugging purposes
-                    if (*maxCO2_ptr == 0xFFFF)
-                    {
-                        // for debugging purposes
-                        status_leds_fastBlink(led_ST3);
-                    }
-                    else
-                    {
-                        // for debugging purposes
-                        status_leds_shortPuls(led_ST3);
-                    }
+                    updateConfiguration(minCO2, maxCO2, minTemp,
+                                        maxTemp, minHum, maxHum, servstatus);
 
                     vTaskDelay(pdMS_TO_TICKS(20UL));
 
-                    // free the memory
-                    free(minCO2_ptr);
-                    free(maxCO2_ptr);
-                    free(minHum_ptr);
-                    free(maxHum_ptr);
-                    free(minTemp_ptr);
-                    free(maxTemp_ptr);
-
-                    // set pointers to NULL
-                    minCO2_ptr = NULL;
-                    maxCO2_ptr = NULL;
-                    minHum_ptr = NULL;
-                    maxHum_ptr = NULL;
-                    minTemp_ptr = NULL;
-                    maxTemp_ptr = NULL;
 
                     // turn off LEDs from debug if () after 10 seconds
                     vTaskDelay(pdMS_TO_TICKS(10000UL));

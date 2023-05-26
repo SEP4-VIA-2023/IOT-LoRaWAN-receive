@@ -1,0 +1,3 @@
+C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-megaatmega2560/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-megaatmega2560/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-megaatmega2560/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir

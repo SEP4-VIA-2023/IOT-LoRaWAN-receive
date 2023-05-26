@@ -19,6 +19,7 @@
 #include "co2.h"
 #include "humidity_and_temperature.h"
 #include "servo.h"
+#include "../lib/FreeRTOS/src/FreeRTOSVariant.h"
 
 // define one task
 void displayReadings( void *pvParameters );
@@ -104,11 +105,11 @@ void initialiseSystem()
 	display_7seg_powerUp();
 	initialiseCO2(2);
 	initialiseTEMHUM(2);
-	initialiseServo(2,
-		0,700,
-		50,500,
-		0,1000,
-		100);
+	initialiseServo(2, // priority
+		0,700, // CO2 MIN MAX
+		50,500, // TEMPERATURE MIN MAX
+		0,1000, // HUMIDITY MIN MAX
+		100); // Servo degrees
 	
 	
 	// Let's create some tasks
