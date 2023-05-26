@@ -1,12 +1,17 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
 {
     "configurations": [
         {
             "name": "PlatformIO",
             "includePath": [
-                "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/include",
-                "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/src",
-                "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/lib/drivers",
-                "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/lib/FreeRTOS/src",
+                "C:/Users/andrejs/Documents/School/SEP4/IOT-LoRaWAN-receive_fix/include",
+                "C:/Users/andrejs/Documents/School/SEP4/IOT-LoRaWAN-receive_fix/src",
+                "C:/Users/andrejs/Documents/School/SEP4/IOT-LoRaWAN-receive_fix/lib/drivers",
+                "C:/Users/andrejs/Documents/School/SEP4/IOT-LoRaWAN-receive_fix/lib/FreeRTOS/src",
                 "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/cores/MegaCore",
                 "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/variants/100-pin-arduino-mega",
                 "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/AVR_examples/src",
@@ -23,10 +28,10 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/include",
-                    "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/src",
-                    "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/lib/drivers",
-                    "C:/Users/andrejs/Documents/School/SEP4/IOT_Dev/lib/FreeRTOS/src",
+                    "C:/Users/andrejs/Documents/School/SEP4/IOT-LoRaWAN-receive_fix/include",
+                    "C:/Users/andrejs/Documents/School/SEP4/IOT-LoRaWAN-receive_fix/src",
+                    "C:/Users/andrejs/Documents/School/SEP4/IOT-LoRaWAN-receive_fix/lib/drivers",
+                    "C:/Users/andrejs/Documents/School/SEP4/IOT-LoRaWAN-receive_fix/lib/FreeRTOS/src",
                     "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/cores/MegaCore",
                     "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/variants/100-pin-arduino-mega",
                     "C:/Users/andrejs/.platformio/packages/framework-arduino-avr-megacore/libraries/AVR_examples/src",
@@ -56,8 +61,7 @@
             "compilerArgs": [
                 "-mmcu=atmega2560",
                 ""
-            ],
-            "configurationProvider": "ms-vscode.cmake-tools"
+            ]
         }
     ],
     "version": 4
