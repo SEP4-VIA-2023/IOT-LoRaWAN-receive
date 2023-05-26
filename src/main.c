@@ -115,12 +115,11 @@ void initialiseSystem()
 	create_tasks_and_semaphores();
 
 	// vvvvvvvvvvvvvvvvv BELOW IS LoRaWAN initialisation vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-	// Status Leds driver
+
+    // Status Leds driver
 	status_leds_initialise(5); // Priority 5 for internal task
-	// Initialise the LoRaWAN driver without down-link buffer
-	lora_driver_initialise(1, NULL);
-	// Create LoRaWAN task and start it up with priority 3
-	lora_handler_initialise(3);
+    // Create LoRaWAN task and start it up with priority 3
+    lora_handler_initialise(3);
 }
 
 /*-----------------------------------------------------------*/
