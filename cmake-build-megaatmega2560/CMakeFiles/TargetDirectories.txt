@@ -1,5 +1,0 @@
-C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-megaatmega2560/CMakeFiles/Production.dir
-C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-megaatmega2560/CMakeFiles/Debug.dir
-C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-megaatmega2560/CMakeFiles/Z_DUMMY_TARGET.dir
-C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-megaatmega2560/CMakeFiles/edit_cache.dir
-C:/Users/45552/Desktop/VIA_UC/Semester4/SEP4/IOT-LoRaWAN-receive/cmake-build-megaatmega2560/CMakeFiles/rebuild_cache.dir

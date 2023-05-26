@@ -3,6 +3,8 @@ Release/
 Debug/
 .vscode/
 build/
+cmake-build-megaatmega2560/
+cmake-build-debug/
 # PlatformIO
 .pio/
 
