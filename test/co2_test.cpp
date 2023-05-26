@@ -12,6 +12,7 @@ extern "C" {
 // Declare and define fakes using FFF
 FAKE_VALUE_FUNC(mh_z19_returnCode_t, mh_z19_takeMeassuring);
 FAKE_VALUE_FUNC(uint16_t, readCO2);
+FAKE_VOID_FUNC(initialiseCO2, UBaseType_t);
 
 // Test fixture for CO2 functions
 class CO2Test : public ::testing::Test {
@@ -20,13 +21,23 @@ protected:
         // Reset the fakes and clear the history before each test
         RESET_FAKE(mh_z19_takeMeassuring);
         RESET_FAKE(readCO2);
+        RESET_FAKE(initialiseCO2);
         FFF_RESET_HISTORY();
     }
 };
 
+// Test the initialiseCO2() function
+TEST_F(CO2Test, initialiseCO2) {
+    UBaseType_t CO2Priority = 1;
+
+    initialiseCO2(CO2Priority);
+
+    EXPECT_EQ(1, initialiseCO2_fake.arg0_history[0]);
+
+}
 
 // Test the readCO2() function
-TEST_F(CO2Test, ReadCO2) {
+TEST_F(CO2Test, readCO2) {
     // Set up test variables
     uint16_t CO2;
 

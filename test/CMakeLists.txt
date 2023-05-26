@@ -21,6 +21,7 @@ FetchContent_MakeAvailable(googletest )
 set(SOURCES_TEST
     co2_test.cpp
     hum_and_temp_test.cpp
+    servo_test.cpp
     FreeRTOS_defs/FreeRTOS_FFF_MocksDefinitions.cpp
     #../src/task1.c
     ${SRCS}

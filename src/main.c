@@ -103,7 +103,7 @@ void initialiseSystem()
 	display_7seg_initialise(NULL);
 	display_7seg_powerUp();
 	initialiseCO2(2);
-	intitialiseTEMHUM(2);
+	initialiseTEMHUM(2);
 	initialiseServo(2,
 		0,700,
 		50,500,

@@ -13,7 +13,7 @@ int16_t TEM;
 
 void TEMHUMReadingLoop(void *pvParameters);
 
-void intitialiseTEMHUM(UBaseType_t TEMHUMPriority){
+void initialiseTEMHUM(UBaseType_t TEMHUMPriority){
     hih8120_initialise();
     hih8120_wakeup();
     
